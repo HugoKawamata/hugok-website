@@ -1,0 +1,75 @@
+@import 'variables';
+
+.big-hero {
+    background-color: $hero-background-color;
+    height: $hero-height;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-text-cont {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    height: $hero-height;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+    .hero-text {
+        margin-top: 15vh;
+    }
+
+    .hello-world {
+        font-family: $code-font;
+        font-size: 3rem;
+    }
+
+    .introduction {
+        font-family: $h-font;
+        font-size: 2.6rem;
+    }
+}
+
+.nav {
+    background-color: $navbar-color;
+    justify-content: space-between;
+
+    .nav-left, .nav-right {
+        justify-content: space-around;
+    }
+}
+
+.logo-container {
+    width: 35px;
+    display: flex;
+    align-content: center;
+}
+
+.logo {
+    border-radius: 3px;
+
+}
+
+.panels-container {
+    margin: auto;
+    width: $hero-height;
+    height: $hero-height;
+}
+
+.panels {
+    height: $hero-height;
+    
+    .rows {
+        height: $hero-height / 8;
+    }
+}
+
+.panel-comp {
+    width: 12.5%;
+    height: 100%;
+    background-color: $panel;
+    display: inline-block;
+    //box-shadow: 6px 6px 12px #888;
+}
