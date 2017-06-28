@@ -44,7 +44,6 @@ export default class Panels extends React.Component {
                 rowItems[colI] = <Panel key={"col " + colI + ", row " + rowI} col={colI} row={rowI}>{colI + "col, " + rowI + "row"}</Panel>
             }
             listOfRows[rowI] = <div key={"row " + rowI} className={rowType}>{rowItems}</div>;
-            console.log(listOfRows[rowI])
         }
 
         return listOfRows;

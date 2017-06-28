@@ -4,21 +4,33 @@ export default class Panel extends React.Component {
     constructor(props) {
         super(props);
         this.flipSelf = this.flipSelf.bind(this);
+        this.setState = this.setState.bind(this);
 
         this.state = {
             column: props.col, // Out of 24 (or 12 if mobile)
-            row: props.row // Out of 12 (or 24 if mobile)
+            row: props.row, // Out of 12 (or 24 if mobile)
+            delay: (props.row * 2 + props.col) * 80,
+            className: "panel-comp panel-unflipped"
         }
+        setTimeout(() => this.flipSelf(), 1000+this.state.delay);
     }
 
     flipSelf() {
-        console.log("flipped")
+        console.log("cuckme" + this.state.column + " " + this.state.row)
+        this.setState(
+            {
+                column: this.state.column,
+                row: this.state.row,
+                delay: this.state.delay,
+                className: "panel-comp panel-flipping"
+            }
+        );
+
     }
 
     render() {
-
         return (
-            <div className="panel-comp" onMouseOver={this.flipSelf} >
+            <div className={this.state.className} >
             </div>
         );
     }
