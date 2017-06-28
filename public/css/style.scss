@@ -1,17 +1,19 @@
 @import 'variables';
 
+#app-container {
+    position: relative;
+}
+
 .big-hero {
-    background-color: $hero-background-color;
     height: $hero-height;
     width: 100%;
-    position: relative;
+    position: absolute;
     overflow: hidden;
 }
 
 .hero-text-cont {
     width: 100%;
     text-align: center;
-    position: absolute;
     height: $hero-height;
     display: flex;
     align-content: center;
@@ -32,8 +34,13 @@
     }
 }
 
+.nav-container {
+    position: absolute;
+    width: 100vw;
+}
+
 .nav {
-    background-color: $navbar-color;
+    background-color: $transparent;
     justify-content: space-between;
 
     .nav-left, .nav-right {
@@ -60,6 +67,7 @@
 
 .panels {
     height: $hero-height;
+    background-color: $hero-background-color;
     
     .rows {
         height: $hero-height / 8;

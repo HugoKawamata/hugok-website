@@ -1,6 +1,5 @@
 import React from 'react';
 
-import Panels from './Panels';
 
 export default class Hero extends React.Component {
     render() {
@@ -16,10 +15,6 @@ export default class Hero extends React.Component {
                             <span className="name">Jeff</span>
                         </p>
                     </div>
-                </div>
-
-                <div className="panels-container">
-                    <Panels />
                 </div>
             </div>
 
