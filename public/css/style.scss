@@ -65,19 +65,21 @@
     height: $hero-height;
 }
 
+.panel-comp {
+    background-color: $panel;
+    display: inline-block;
+}
+
 .panels {
     height: $hero-height;
     background-color: $hero-background-color;
     
-    .rows {
-        height: $hero-height / 8;
-    }
-}
+    .desktop-row {
+        height: $hero-height / 12;
 
-.panel-comp {
-    width: 12.5%;
-    height: 100%;
-    background-color: $panel;
-    display: inline-block;
-    //box-shadow: 6px 6px 12px #888;
+        .panel-comp {
+            width: (100/24) * 1%;
+            height: 100%;
+        }
+    }
 }

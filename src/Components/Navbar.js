@@ -16,7 +16,7 @@ export default class Navbar extends React.Component {
                     <div className="nav-center">
                         <a className="nav-item">
                             <div className="logo-container">
-                                <img className="logo" src="images/logo.png" />
+                                <img className="logo" src="images/logo.png" alt="HK logo"/>
                             </div>
                         </a>
                     </div>
