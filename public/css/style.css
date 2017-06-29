@@ -1,0 +1,78 @@
+/* ---- Colors ---- */
+/* ---- Other ---- */
+#app-container {
+  position: relative; }
+
+.big-hero {
+  height: 90vh;
+  width: 100%;
+  position: absolute;
+  overflow: hidden; }
+
+.hero-text-cont {
+  width: 100%;
+  text-align: center;
+  height: 90vh;
+  display: flex;
+  align-content: center;
+  justify-content: center; }
+  .hero-text-cont .hero-text {
+    margin-top: 15vh; }
+  .hero-text-cont .hello-world {
+    font-family: "Source Code Pro", monospace;
+    font-size: 3rem; }
+  .hero-text-cont .introduction {
+    font-family: "Lato", sans-serif;
+    font-size: 2.6rem; }
+
+.nav-container {
+  position: absolute;
+  width: 100vw; }
+
+.nav {
+  background-color: transparent;
+  justify-content: space-between; }
+  .nav .nav-left, .nav .nav-right {
+    justify-content: space-around; }
+
+.logo-container {
+  width: 35px;
+  display: flex;
+  align-content: center; }
+
+.logo {
+  border-radius: 3px; }
+
+.panels-container {
+  margin: auto;
+  width: 90vh;
+  height: 90vh; }
+
+.panel-comp {
+  display: inline-block; }
+
+.panels {
+  height: 90vh;
+  background-color: #e7e6c1; }
+  .panels .desktop-row {
+    height: 7.5vh; }
+    .panels .desktop-row .panel-comp {
+      height: 100%;
+      transition: margin-left 0.5s, margin-right 0.5s, width 0.5s; }
+    .panels .desktop-row .panel-unflipped {
+      width: 4.16667%;
+      margin-right: 0px;
+      margin-left: 0px;
+      background-color: #14ff90; }
+    .panels .desktop-row .panel-flipping {
+      background-color: #14ff90;
+      margin-left: 2.08333%;
+      margin-right: 2.08333%;
+      width: 0px; }
+    .panels .desktop-row .panel-flipped {
+      margin-left: 0px;
+      margin-right: 0px;
+      width: 4.16667%;
+      background-color: #00ff00; }
+
+/*# sourceMappingURL=style.css.map */
