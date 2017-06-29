@@ -5,7 +5,7 @@ import Panel from './Panel'
 export default class Panels extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {width: 0, height: 0}
+        this.state = {width: 0, height: 0, flipped: 0}
         this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
         this.drawPanels = this.drawPanels.bind(this);
     }
@@ -20,7 +20,15 @@ export default class Panels extends React.Component {
     }
 
     updateWindowDimensions() {
-        this.setState({ width: window.innerWidth, height: window.innerHeight });
+        if ((window.innerHeight > window.innerWidth && this.state.height < this.state.width) ||
+            // Previous state was desktop, switched to mobile
+            (window.innerHeight < window.innerWidth && this.state.height > this.state.width)
+            // Previous state was mobile, switched to desktop
+        ) {
+            this.setState({ width: window.innerWidth, height: window.innerHeight, flipped: 1 });
+        } else {
+            this.setState({ width: window.innerWidth, height: window.innerHeight, flipped: this.state.flipped });
+        }
     }
 
     drawPanels() {
@@ -44,7 +52,11 @@ export default class Panels extends React.Component {
         for (let rowI = 0; rowI < numRows; rowI++) {
             var rowItems = []
             for (let colI = 0; colI < numCols; colI++) {
-                rowItems[colI] = <Panel key={"col " + colI + ", row " + rowI} col={colI} row={rowI}>{colI + "col, " + rowI + "row"}</Panel>
+                if (this.state.flipped == 1) {
+                    rowItems[colI] = <Panel key={"col " + colI + ", row " + rowI} col={colI} row={rowI} className="panel-flipping" />
+                } else {
+                    rowItems[colI] = <Panel key={"col " + colI + ", row " + rowI} col={colI} row={rowI} className="panel-unflipped" />
+                }
             }
             listOfRows[rowI] = <div key={"row " + rowI} className={rowType}>{rowItems}</div>;
         }
@@ -55,9 +67,10 @@ export default class Panels extends React.Component {
 
     render() {
         var panelsHeight = {height: (this.state.width / 2) + "px"}
+        var panels = this.drawPanels();
         return (
             <div className="panels" >
-                {this.drawPanels()}
+                {panels}
             </div>
         );
     }
