@@ -77,29 +77,32 @@
         height: $hero-height / 12;
 
         .panel-comp {
-            height: 100%;
-            transition: margin-left $panel-flip-time, margin-right $panel-flip-time, width $panel-flip-time;
-        }
-
-        .panel-unflipped {
             width: (100/24) * 1%;
-            margin-right: 0px;
-            margin-left: 0px;
-            background-color: $panel;
-        }
-
-        .panel-flipping {
-            background-color: $panel;
-            margin-left: (100/24) * 0.5%;
-            margin-right: (100/24) * 0.5%;
-            width: 0px;
-        }
-
-        .panel-flipped {
-            margin-left: 0px;
-            margin-right: 0px;
-            width: (100/24) * 1%;
-            background-color: #00ff00;
+            transition: background-color $panel-flip-time;
         }
     }
+
+    .mobile-row {
+        height: $hero-height / 24;
+
+        .panel-comp {
+            width: (100/12) * 1%;
+            transition: background-color $panel-flip-time-mobile;
+        }
+    }
+
+    .panel-comp {
+        height: 100%;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .panel-unflipped {
+        background-color: $panel;
+    }
+
+    .panel-flipping {
+        background-color: $flipped-panel;
+    }
+
 }

@@ -31,6 +31,9 @@ export default class Panels extends React.Component {
 
         if (this.state.height > this.state.width) {
             // Mobile
+            numCols = 12;
+            numRows = 24;
+            rowType = "mobile-row";
         } else {
             // Desktop
             numCols = 24;
