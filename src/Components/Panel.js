@@ -24,7 +24,6 @@ export default class Panel extends React.Component {
                 className: "panel-comp panel-flipping"
             }
         );
-        setTimeout(() => this.finishFlip(), 500)
 
     }
 

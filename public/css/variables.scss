@@ -3,6 +3,7 @@ $sand: #e7e6c1;
 $transparent: rgba(0,0,0,0);
 $seagreen: #14ff90;
 
+$flipped-panel: $sand;
 $panel: $seagreen;
 $navbar-color: $sand;
 $hero-background-color: $sand;
@@ -15,3 +16,4 @@ $code-font: "Source Code Pro", monospace;
 $hero-height: 90vh;
 
 $panel-flip-time: 0.5s;
+$panel-flip-time-mobile: 0.3s;

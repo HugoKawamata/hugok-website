@@ -57,22 +57,20 @@
   .panels .desktop-row {
     height: 7.5vh; }
     .panels .desktop-row .panel-comp {
-      height: 100%;
-      transition: margin-left 0.5s, margin-right 0.5s, width 0.5s; }
-    .panels .desktop-row .panel-unflipped {
       width: 4.16667%;
-      margin-right: 0px;
-      margin-left: 0px;
-      background-color: #14ff90; }
-    .panels .desktop-row .panel-flipping {
-      background-color: #14ff90;
-      margin-left: 2.08333%;
-      margin-right: 2.08333%;
-      width: 0px; }
-    .panels .desktop-row .panel-flipped {
-      margin-left: 0px;
-      margin-right: 0px;
-      width: 4.16667%;
-      background-color: #00ff00; }
+      transition: background-color 0.5s; }
+  .panels .mobile-row {
+    height: 3.75vh; }
+    .panels .mobile-row .panel-comp {
+      width: 8.33333%;
+      transition: background-color 0.3s; }
+  .panels .panel-comp {
+    height: 100%;
+    margin-right: 0px;
+    margin-left: 0px; }
+  .panels .panel-unflipped {
+    background-color: #14ff90; }
+  .panels .panel-flipping {
+    background-color: #e7e6c1; }
 
 /*# sourceMappingURL=style.css.map */
