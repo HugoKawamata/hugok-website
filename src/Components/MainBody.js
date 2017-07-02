@@ -60,6 +60,11 @@ export default class MainBody extends React.Component {
             case "projects":
                 page = (
                     <div className="main-body">
+                        <div className="heading-container">
+                            <div className="introduction">
+                                Projects
+                            </div>
+                        </div>
                     </div>
                 );
                 break;

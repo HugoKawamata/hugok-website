@@ -8,6 +8,15 @@ html {
     position: relative;
 }
 
+.heading-container {
+    display: flex;
+    justify-content: center;
+
+    .introduction {
+        padding-top: 15vh;
+    }
+}
+
 .big-hero {
     height: $hero-height;
     width: 100%;
@@ -33,14 +42,15 @@ html {
         font-size: 2rem;
     }
 
-    .introduction {
-        font-family: $h-font;
-        font-size: 3.4rem;
-    }
 
     i {
         font-size: 3em;
     }
+}
+
+.introduction {
+    font-family: $h-font;
+    font-size: 3.4rem;
 }
 
 .profile-img {

@@ -6,6 +6,12 @@ html {
 #app-container {
   position: relative; }
 
+.heading-container {
+  display: flex;
+  justify-content: center; }
+  .heading-container .introduction {
+    padding-top: 15vh; }
+
 .big-hero {
   height: 90vh;
   width: 100%;
@@ -25,11 +31,12 @@ html {
   .hero-text-cont .hello-world {
     font-family: "Source Code Pro", monospace;
     font-size: 2rem; }
-  .hero-text-cont .introduction {
-    font-family: "Raleway", sans-serif;
-    font-size: 3.4rem; }
   .hero-text-cont i {
     font-size: 3em; }
+
+.introduction {
+  font-family: "Raleway", sans-serif;
+  font-size: 3.4rem; }
 
 .profile-img {
   width: 10em;
