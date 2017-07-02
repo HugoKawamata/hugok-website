@@ -6,11 +6,17 @@ export default class Navbar extends React.Component {
             <div className="nav-container">
                 <nav className="nav">
                     <div className="nav-left">
-                        <a className="nav-item">
-                            About
+                        <a className={this.props.current === "about" ? "nav-item nav-current" : "nav-item"}>
+                            <div className="nav-item-child">
+                                About
+                                <div className="nav-item-underline" />
+                            </div>
                         </a>
-                        <a className="nav-item">
-                            Projects
+                        <a className={this.props.current === "projects" ? "nav-item nav-current" : "nav-item"}>
+                            <div className="nav-item-child">
+                                Projects
+                                <div className="nav-item-underline" />
+                            </div>
                         </a>
                     </div>
                     <div className="nav-center">
@@ -21,11 +27,17 @@ export default class Navbar extends React.Component {
                         </a>
                     </div>
                     <div className="nav-right">
-                        <a className="nav-item">
-                            Resume
+                        <a className={this.props.current === "resume" ? "nav-item nav-current" : "nav-item"}>
+                            <div className="nav-item-child">
+                                Resume
+                                <div className="nav-item-underline" />
+                            </div>
                         </a>
-                        <a className="nav-item">
-                            Bonsai
+                        <a className={this.props.current === "bonsai" ? "nav-item nav-current" : "nav-item"}>
+                            <div className="nav-item-child">
+                                Bonsai
+                                <div className="nav-item-underline" />
+                            </div>
                         </a>
                     </div>
                 </nav>

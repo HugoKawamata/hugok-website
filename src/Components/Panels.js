@@ -52,7 +52,7 @@ export default class Panels extends React.Component {
         for (let rowI = 0; rowI < numRows; rowI++) {
             var rowItems = []
             for (let colI = 0; colI < numCols; colI++) {
-                if (this.state.flipped == 1) {
+                if (this.state.flipped === 1) {
                     rowItems[colI] = <Panel key={"col " + colI + ", row " + rowI} col={colI} row={rowI} className="panel-flipping" />
                 } else {
                     rowItems[colI] = <Panel key={"col " + colI + ", row " + rowI} col={colI} row={rowI} className="panel-unflipped" />

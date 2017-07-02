@@ -18,6 +18,7 @@
     display: flex;
     align-content: center;
     justify-content: center;
+    z-index: 900;
 
     .hero-text {
         margin-top: 15vh;
@@ -34,6 +35,11 @@
     }
 }
 
+.profile-img {
+    width: 10em;
+    margin-top: 3em;
+}
+
 .nav-container {
     position: absolute;
     width: 100vw;
@@ -45,6 +51,31 @@
 
     .nav-left, .nav-right {
         justify-content: space-around;
+        .nav-item {
+            width: 30%;
+            .nav-item-child {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.nav-item {
+    .nav-item-underline {
+        transition: margin 1s, width 1s;
+        width: 0%;
+        height: 2px;
+        background-color: $underline-color;
+        margin-right: 50%;
+        margin-left: 50%;
+    }
+}
+
+.nav-current {
+    .nav-item-underline {
+        margin-right: 10%; // This gets doubled for some fuckall reason
+        margin-left: 20%;
+        width: 60%;
     }
 }
 
@@ -72,6 +103,10 @@
 .panels {
     height: $hero-height;
     background-color: $hero-background-color;
+    background-image: $hero-background-img;
+    z-index: 1;
+    background-position: center;
+    background-size: cover;
     
     .desktop-row {
         height: $hero-height / 12;
@@ -95,6 +130,7 @@
         height: 100%;
         margin-right: 0px;
         margin-left: 0px;
+        z-index: 1;
     }
 
     .panel-unflipped {
@@ -102,7 +138,7 @@
     }
 
     .panel-flipping {
-        background-color: $flipped-panel;
+        background-color: $trans-green;
     }
 
 }

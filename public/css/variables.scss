@@ -1,12 +1,17 @@
 /* ---- Colors ---- */
 $sand: #e7e6c1;
 $transparent: rgba(0,0,0,0);
+$trans-green: rgba(20,255,144,0.5);
 $seagreen: #14ff90;
 
 $flipped-panel: $sand;
 $panel: $seagreen;
 $navbar-color: $sand;
 $hero-background-color: $sand;
+$underline-color: #ff00ff;
+
+$hero-background-img: url("/../images/vapeywave.jpg");
+$profile-img: url("/../images/me.png");
 
 /* ---- Other ---- */
 $h-font: "Lato", sans-serif;

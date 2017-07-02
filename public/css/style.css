@@ -15,7 +15,8 @@
   height: 90vh;
   display: flex;
   align-content: center;
-  justify-content: center; }
+  justify-content: center;
+  z-index: 900; }
   .hero-text-cont .hero-text {
     margin-top: 15vh; }
   .hero-text-cont .hello-world {
@@ -24,6 +25,10 @@
   .hero-text-cont .introduction {
     font-family: "Lato", sans-serif;
     font-size: 2.6rem; }
+
+.profile-img {
+  width: 10em;
+  margin-top: 3em; }
 
 .nav-container {
   position: absolute;
@@ -34,6 +39,23 @@
   justify-content: space-between; }
   .nav .nav-left, .nav .nav-right {
     justify-content: space-around; }
+    .nav .nav-left .nav-item, .nav .nav-right .nav-item {
+      width: 30%; }
+      .nav .nav-left .nav-item .nav-item-child, .nav .nav-right .nav-item .nav-item-child {
+        width: 100%; }
+
+.nav-item .nav-item-underline {
+  transition: margin 1s, width 1s;
+  width: 0%;
+  height: 2px;
+  background-color: #ff00ff;
+  margin-right: 50%;
+  margin-left: 50%; }
+
+.nav-current .nav-item-underline {
+  margin-right: 10%;
+  margin-left: 20%;
+  width: 60%; }
 
 .logo-container {
   width: 35px;
@@ -53,7 +75,11 @@
 
 .panels {
   height: 90vh;
-  background-color: #e7e6c1; }
+  background-color: #e7e6c1;
+  background-image: url("/../images/vapeywave.jpg");
+  z-index: 1;
+  background-position: center;
+  background-size: cover; }
   .panels .desktop-row {
     height: 7.5vh; }
     .panels .desktop-row .panel-comp {
@@ -67,10 +93,11 @@
   .panels .panel-comp {
     height: 100%;
     margin-right: 0px;
-    margin-left: 0px; }
+    margin-left: 0px;
+    z-index: 1; }
   .panels .panel-unflipped {
     background-color: #14ff90; }
   .panels .panel-flipping {
-    background-color: #e7e6c1; }
+    background-color: rgba(20, 255, 144, 0.5); }
 
 /*# sourceMappingURL=style.css.map */

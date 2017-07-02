@@ -9,10 +9,13 @@ export default class Panel extends React.Component {
         this.state = {
             column: props.col, // Out of 24 (or 12 if mobile)
             row: props.row, // Out of 12 (or 24 if mobile)
-            delay: (props.row * 2 + props.col) * 120,
+            delay: (props.row * 2 + props.col) * 80,
             className: "panel-comp " + props.className
         }
-        setTimeout(() => this.flipSelf(), 1000+this.state.delay);
+
+        if (this.state.className === "panel-comp panel-unflipped") {
+            setTimeout(() => this.flipSelf(), 1000+this.state.delay);
+        }
     }
 
     flipSelf() {

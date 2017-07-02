@@ -2,16 +2,22 @@ import React, { Component } from 'react';
 
 import './App.css';
 import Navbar from './Components/Navbar';
-import Hero from './Components/Hero';
-import Panels from './Components/Panels';
+import MainBody from './Components/MainBody';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      page: "about"
+    }
+  }
+
+
   render() {
     return (
       <div id="app-container">
-        <Navbar />
-        <Hero />
-        <Panels />
+        <Navbar current={this.state.page} />
+        <MainBody current={this.state.page} />
       </div>
     );
   }
