@@ -68,6 +68,12 @@
         background-color: $underline-color;
         margin-right: 50%;
         margin-left: 50%;
+
+        :hover {
+            width: 100%;
+            margin-right: 0;
+            margin-left: 0;
+        }
     }
 }
 
