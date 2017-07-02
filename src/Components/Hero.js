@@ -11,11 +11,10 @@ export default class Hero extends React.Component {
                             Hello World!
                         </p>
                         <p className="introduction">
-                            My Nama <br/>
-                            <span className="name">Jeff</span>
+                            I'm Hugo.
                         </p>
                         <div className="hero-img">
-                            <img className="profile-img" src="images/me.png" />
+                            <img className="profile-img" src="images/me.png" alt="Hugo-Profile"/>
                         </div>
                     </div>
                 </div>

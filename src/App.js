@@ -12,11 +12,17 @@ class App extends Component {
     }
   }
 
+  changePage(pagename) {
+    this.setState({
+      page: pagename
+    })
+  }
+
 
   render() {
     return (
       <div id="app-container">
-        <Navbar current={this.state.page} />
+        <Navbar current={this.state.page} changePage={(name) => this.changePage(name)}/>
         <MainBody current={this.state.page} />
       </div>
     );

@@ -1,5 +1,9 @@
 @import 'variables';
 
+html {
+    background-color: $seagreen
+}
+
 #app-container {
     position: relative;
 }
@@ -26,12 +30,16 @@
 
     .hello-world {
         font-family: $code-font;
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     .introduction {
         font-family: $h-font;
-        font-size: 2.6rem;
+        font-size: 3.4rem;
+    }
+
+    i {
+        font-size: 3em;
     }
 }
 
@@ -48,40 +56,22 @@
 .nav {
     background-color: $transparent;
     justify-content: space-between;
+    font-family: $nav-font;
+    font-weight: 800;
 
     .nav-left, .nav-right {
         justify-content: space-around;
+
         .nav-item {
-            width: 30%;
-            .nav-item-child {
-                width: 100%;
-            }
+            color: #555;
+            text-transform: uppercase;
+            transition: color 0.6s;
+
         }
-    }
-}
 
-.nav-item {
-    .nav-item-underline {
-        transition: margin 1s, width 1s;
-        width: 0%;
-        height: 2px;
-        background-color: $underline-color;
-        margin-right: 50%;
-        margin-left: 50%;
-
-        :hover {
-            width: 100%;
-            margin-right: 0;
-            margin-left: 0;
+        .nav-item:hover {
+            color: #fff;
         }
-    }
-}
-
-.nav-current {
-    .nav-item-underline {
-        margin-right: 10%; // This gets doubled for some fuckall reason
-        margin-left: 20%;
-        width: 60%;
     }
 }
 
@@ -147,4 +137,44 @@
         background-color: $trans-green;
     }
 
+}
+
+
+#content {
+    background-color: $hero-background-color;
+
+    h2 {
+        font-size: 2rem;
+        font-family: $h-font;
+    }
+
+    .home-section {
+        padding: 4rem 20%;
+        display: flex;
+        flex-wrap: nowrap;
+
+        .home-icon {
+            font-size: 5rem;
+            padding: 1rem;
+        }
+
+        .home-text {
+        }
+
+        p {
+            font-family: $p-font;
+        }
+    }
+}
+
+@media (max-width: 788px) {
+    #content {
+        .home-section {
+            flex-wrap: wrap;
+            text-align: center;
+        }
+        .home-icon {
+            margin: auto;
+        }
+    }
 }

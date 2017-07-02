@@ -14,7 +14,7 @@ export default class Panel extends React.Component {
         }
 
         if (this.state.className === "panel-comp panel-unflipped") {
-            setTimeout(() => this.flipSelf(), 1000+this.state.delay);
+            setTimeout(() => this.flipSelf(), 2000+this.state.delay);
         }
     }
 

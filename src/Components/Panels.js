@@ -66,7 +66,6 @@ export default class Panels extends React.Component {
 
 
     render() {
-        var panelsHeight = {height: (this.state.width / 2) + "px"}
         var panels = this.drawPanels();
         return (
             <div className="panels" >
