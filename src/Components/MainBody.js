@@ -65,8 +65,133 @@ export default class MainBody extends React.Component {
                                 Projects
                             </div>
                         </div>
+                        <div className="project-row">
+                            <div className="project-cell">
+                                <img className="project-image" src="images/palette.png" alt="Palette Picker"/>
+                                <div className="project-name">
+                                    <a href="https://github.com/HugoKawamata/PalettePicker" >
+                                        <i className="fa fa-github" aria-hidden="true"></i>
+                                    </a>
+                                    Palette Picker
+                                </div>
+                                <div className="project-desc">
+                                    A react web app which allows users to plan colour schemes for website design. 
+                                </div>
+                            </div>
+                            <div className="project-cell">
+                                <img className="project-image" src="images/hugokawamata.png" alt="HugoKawamata.com" />
+                                <div className="project-name">
+                                    <a href="https://github.com/HugoKawamata/hugok-website" >
+                                        <i className="fa fa-github" aria-hidden="true"></i>
+                                    </a>
+                                    HugoKawamata.com
+                                </div>
+                                <div className="project-desc">
+                                    A personal portfolio website for showcasing webdev experience.
+                                </div>
+                            </div>
+                            <div className="project-cell">
+                                <a href="http://bonsaidesign.com.au/">
+                                    <img className="project-image" src="images/bonsai.png" alt="Bonsai Design" />
+                                </a>
+                                <div className="project-name">
+                                    <a href="https://github.com/HugoKawamata/Bonsai-Design-Website" >
+                                        <i className="fa fa-github" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="http://bonsaidesign.com.au/">
+                                        Bonsai Design
+                                    </a>
+                                    
+                                </div>
+                                <div className="project-desc">
+                                    A pure html/css website to promote my web design business.
+                                </div>
+                            </div>
+                        </div>
+                        <div className="project-row">
+                            <div className="project-cell">
+                                <img className="project-image" src="images/seinquote.png" alt="SeinQuote"/>
+                                <div className="project-name">
+                                    <a href="https://github.com/HugoKawamata/SeinQuotePy" >
+                                        <i className="fa fa-github" aria-hidden="true"></i>
+                                    </a>
+                                    SeinQuote
+                                </div>
+                                <div className="project-desc">
+                                    A command line python program which searches for Seinfeld episodes based on quotes.
+                                </div>
+                            </div>
+                            <div className="project-cell">
+                                <img className="project-image" src="images/syncuq.png" alt="SyncUQ" />
+                                <div className="project-name">
+                                    <a href="https://github.com/MaxwellBo/suq">
+                                        <i className="fa fa-github" aria-hidden="true"></i>
+                                    </a>
+                                    SyncUQ
+                                </div>
+                                <div className="project-desc">
+                                    A full stack web app (Postgres/Flask/Elm) which lets UQ students know when their friends are free at uni.
+                                </div>
+                            </div>
+                            <div className="project-cell">
+                                <img className="project-image" src="images/scpnet.png" alt="SCPnet" />
+                                <div className="project-name">
+                                    <a href="https://github.com/HugoKawamata/scpnet">
+                                        <i className="fa fa-github" aria-hidden="true"></i>
+                                    </a>
+                                    SCPnet
+                                </div>
+                                <div className="project-desc">
+                                    A command line python program which allows users to read SCP articles from the CLI.
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 );
+                break;
+            case "personal":
+                page = (
+                    <div className="main-body">
+                        <div className="heading-container">
+                            <div className="introduction">
+                                Personal
+                            </div>
+                        </div>
+                        <div className="home-section">
+                            <div className="home-text">
+                                <h2>Magic</h2>
+                                <p>
+                                    Since childhood I've loved card games of all kinds, and I still love playing Magic.
+                                    I mainly play EDH, but I've also enjoyed standard and drafting. My EDH decks are currently: 
+                                    Varolz, Karlov, Tomorrow, Omnath, and Zedruu.
+                                </p>
+                                <div className="magic-row">
+                                    <div className="magic-cell">
+                                        <img src="images/magic/varolz.jpg" />
+                                        Shadow Combo
+                                    </div>
+                                    <div className="magic-cell">
+                                        <img src="images/magic/karlov.jpg" />
+                                        Trigger Warning
+                                    </div>
+                                    <div className="magic-cell">
+                                        <img src="images/magic/tomorrow.jpg" />
+                                        Mono-Concede
+                                    </div>
+                                    <div className="magic-cell">
+                                        <img src="images/magic/omnath.jpg" />
+                                        Classic Ramp
+                                    </div>
+                                    <div className="magic-cell">
+                                        <img src="images/magic/zedruu.jpg" />
+                                        Pillowfort Shenanigans
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                )
                 break;
         }
         return page;

@@ -25,10 +25,12 @@ export default class Navbar extends React.Component {
                         </a>
                     </div>
                     <div className="nav-right">
-                        <a className={this.props.current === "resume" ? "nav-item nav-current" : "nav-item"}>
-                            Resume
+                        <a className={this.props.current === "personal" ? "nav-item nav-current" : "nav-item"}
+                            onClick={() => this.props.changePage("personal")}
+                        >
+                            Personal
                         </a>
-                        <a className={this.props.current === "bonsai" ? "nav-item nav-current" : "nav-item"}>
+                        <a href="http://bonsaidesign.com.au/" className={this.props.current === "bonsai" ? "nav-item nav-current" : "nav-item"}>
                             Bonsai
                         </a>
                     </div>

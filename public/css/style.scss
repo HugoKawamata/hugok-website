@@ -1,7 +1,16 @@
 @import 'variables';
 
 html {
-    background-color: $seagreen
+    background-color: $sand
+}
+
+a {
+    color: #555;
+    transition: color 0.86s;
+}
+
+a:hover {
+    color: #000;
 }
 
 #app-container {
@@ -14,6 +23,7 @@ html {
 
     .introduction {
         padding-top: 15vh;
+        padding-bottom: 2em;
     }
 }
 
@@ -22,6 +32,11 @@ html {
     width: 100%;
     position: absolute;
     overflow: hidden;
+    background: $trans-green;
+    background: -webkit-linear-gradient($seagreen, $trans-green); 
+    background: -o-linear-gradient($seagreen, $trans-green); 
+    background: -moz-linear-gradient($seagreen, $trans-green);
+    background: linear-gradient($sand, $trans-green);
 }
 
 .hero-text-cont {
@@ -45,6 +60,12 @@ html {
 
     i {
         font-size: 3em;
+    }
+}
+
+.hero-img {
+    i {
+        margin-top: 3em;
     }
 }
 
@@ -80,7 +101,13 @@ html {
         }
 
         .nav-item:hover {
-            color: #fff;
+            color: $secgreen;
+        }
+
+        .nav-current {
+            color: $secgreen;
+            transition: color 0.6s;
+            
         }
     }
 }
@@ -144,7 +171,7 @@ html {
     }
 
     .panel-flipping {
-        background-color: $trans-green;
+        background-color: $transparent;
     }
 
 }
@@ -153,38 +180,85 @@ html {
 #content {
     background-color: $hero-background-color;
 
+}
+
+.home-section {
+    padding: 4rem 20%;
+    display: flex;
+    flex-wrap: nowrap;
+
     h2 {
         font-size: 2rem;
         font-family: $h-font;
     }
 
-    .home-section {
-        padding: 4rem 20%;
-        display: flex;
-        flex-wrap: nowrap;
 
-        .home-icon {
-            font-size: 5rem;
-            padding: 1rem;
-        }
+    .home-icon {
+        font-size: 5rem;
+        padding: 1rem;
+    }
 
-        .home-text {
-        }
+    .home-text {
+    }
 
-        p {
-            font-family: $p-font;
-        }
+    p {
+        font-family: $p-font;
     }
 }
 
 @media (max-width: 788px) {
-    #content {
-        .home-section {
-            flex-wrap: wrap;
-            text-align: center;
-        }
-        .home-icon {
-            margin: auto;
-        }
+    .home-section {
+        flex-wrap: wrap;
+        text-align: center;
     }
+    .home-icon {
+        margin: auto;
+    }
+}
+
+.project-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project-cell {
+    margin-bottom: 1.5em;
+    width: 30%;
+    min-width: 15rem;
+    background-color: $seagreen;
+    padding: 1.2em;
+    border-radius: 4px;
+}
+
+.project-image {
+    border-radius: 2px;
+}
+
+.project-name {
+    font-size: 1.2em;
+    
+    i {
+        font-size: 1.4em;
+        margin-right: 0.5em;
+    }
+}
+
+.project-desc {
+    color: #666;
+}
+
+.magic-row {
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.magic-cell {
+    width: 17%;
+    min-width: 8em;
+    text-align: center;
+    font-family: $h-font;
+    font-weight: bold;
 }

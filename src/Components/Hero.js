@@ -14,7 +14,8 @@ export default class Hero extends React.Component {
                             I'm Hugo.
                         </p>
                         <div className="hero-img">
-                            <img className="profile-img" src="images/me.png" alt="Hugo-Profile"/>
+                            <img className="profile-img" src="images/me.png" alt="Hugo-Profile"/><br/>
+                            <i className="fa fa-angle-double-down" aria-hidden="true"></i>
                         </div>
                     </div>
                 </div>
