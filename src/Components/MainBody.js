@@ -63,16 +63,26 @@ export default class MainBody extends React.Component {
                         <div className="heading-container">
                             <div className="introduction">
                                 Projects
+                                <p className="subtitle">
+                                    <a href="https://github.com/HugoKawamata" >
+                                        Visit my Github 
+                                        <i className="fa fa-github" aria-hidden="true"></i>
+                                    </a>
+                                </p>
                             </div>
                         </div>
                         <div className="project-row">
                             <div className="project-cell">
-                                <img className="project-image" src="images/palette.png" alt="Palette Picker"/>
+                                <a href="http://hugokawamata.com/palettepicker.html" >
+                                    <img className="project-image" src="images/palette.png" alt="Palette Picker"/>
+                                </a>
                                 <div className="project-name">
                                     <a href="https://github.com/HugoKawamata/PalettePicker" >
                                         <i className="fa fa-github" aria-hidden="true"></i>
                                     </a>
-                                    Palette Picker
+                                    <a href="http://hugokawamata.com/palettepicker.html" >
+                                        Palette Picker
+                                    </a>
                                 </div>
                                 <div className="project-desc">
                                     A react web app which allows users to plan colour schemes for website design. 
@@ -83,8 +93,8 @@ export default class MainBody extends React.Component {
                                 <div className="project-name">
                                     <a href="https://github.com/HugoKawamata/hugok-website" >
                                         <i className="fa fa-github" aria-hidden="true"></i>
+                                        HugoKawamata.com
                                     </a>
-                                    HugoKawamata.com
                                 </div>
                                 <div className="project-desc">
                                     A personal portfolio website for showcasing webdev experience.
@@ -110,36 +120,44 @@ export default class MainBody extends React.Component {
                         </div>
                         <div className="project-row">
                             <div className="project-cell">
-                                <img className="project-image" src="images/seinquote.png" alt="SeinQuote"/>
+                                <a href="https://github.com/HugoKawamata/SeinQuotePy" >
+                                    <img className="project-image" src="images/seinquote.png" alt="SeinQuote"/>
+                                </a>
                                 <div className="project-name">
                                     <a href="https://github.com/HugoKawamata/SeinQuotePy" >
                                         <i className="fa fa-github" aria-hidden="true"></i>
+                                        SeinQuote
                                     </a>
-                                    SeinQuote
                                 </div>
                                 <div className="project-desc">
                                     A command line python program which searches for Seinfeld episodes based on quotes.
                                 </div>
                             </div>
                             <div className="project-cell">
-                                <img className="project-image" src="images/syncuq.png" alt="SyncUQ" />
+                                <a href="https://www.syncuq.com/">
+                                    <img className="project-image" src="images/syncuq.png" alt="SyncUQ" />
+                                </a>
                                 <div className="project-name">
                                     <a href="https://github.com/MaxwellBo/suq">
                                         <i className="fa fa-github" aria-hidden="true"></i>
                                     </a>
-                                    SyncUQ
+                                    <a href="https://www.syncuq.com/">
+                                        SyncUQ
+                                    </a>
                                 </div>
                                 <div className="project-desc">
                                     A full stack web app (Postgres/Flask/Elm) which lets UQ students know when their friends are free at uni.
                                 </div>
                             </div>
                             <div className="project-cell">
-                                <img className="project-image" src="images/scpnet.png" alt="SCPnet" />
+                                <a href="https://github.com/HugoKawamata/scpnet">
+                                    <img className="project-image" src="images/scpnet.png" alt="SCPnet" />
+                                </a>
                                 <div className="project-name">
                                     <a href="https://github.com/HugoKawamata/scpnet">
                                         <i className="fa fa-github" aria-hidden="true"></i>
+                                        SCPnet
                                     </a>
-                                    SCPnet
                                 </div>
                                 <div className="project-desc">
                                     A command line python program which allows users to read SCP articles from the CLI.
@@ -167,26 +185,37 @@ export default class MainBody extends React.Component {
                                 </p>
                                 <div className="magic-row">
                                     <div className="magic-cell">
-                                        <img src="images/magic/varolz.jpg" />
+                                        <img src="images/magic/varolz.jpg" alt="Varolz"/>
                                         Shadow Combo
                                     </div>
                                     <div className="magic-cell">
-                                        <img src="images/magic/karlov.jpg" />
+                                        <img src="images/magic/karlov.jpg" alt="Karlov"/>
                                         Trigger Warning
                                     </div>
                                     <div className="magic-cell">
-                                        <img src="images/magic/tomorrow.jpg" />
-                                        Mono-Concede
+                                        <img src="images/magic/tomorrow.jpg" alt="Tomorrow"/>
+                                        Dude, Where's My Win-con?
                                     </div>
                                     <div className="magic-cell">
-                                        <img src="images/magic/omnath.jpg" />
+                                        <img src="images/magic/omnath.jpg" alt="Omnath"/>
                                         Classic Ramp
                                     </div>
                                     <div className="magic-cell">
-                                        <img src="images/magic/zedruu.jpg" />
+                                        <img src="images/magic/zedruu.jpg" alt="Zedruu"/>
                                         Pillowfort Shenanigans
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                        <div className="home-section">
+                            <div className="home-text">
+                                <h2>Game Design</h2>
+                                <p>
+                                    I currently have a slowly evolving card game in the works as a personal project. 
+                                    Tabletop game design is something I'm very passionate about, and I've always wanted 
+                                    to try to make a card game. At the moment, it's looking like a hand building game 
+                                    with a space/espionage theme.
+                                </p>
                             </div>
                         </div>
 

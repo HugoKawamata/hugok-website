@@ -4,11 +4,11 @@ html {
   background-color: #f9f9de; }
 
 a {
-  color: #555;
+  color: #444;
   transition: color 0.86s; }
 
 a:hover {
-  color: #000; }
+  color: #0FB667; }
 
 #app-container {
   position: relative; }
@@ -53,6 +53,13 @@ a:hover {
 .introduction {
   font-family: "Raleway", sans-serif;
   font-size: 3.4rem; }
+  .introduction .subtitle {
+    font-size: 1.4rem;
+    font-family: "Raleway", sans-serif;
+    text-align: center; }
+    .introduction .subtitle i {
+      margin-left: 0.5em;
+      font-size: 1.6rem; }
 
 .profile-img {
   width: 10em;
@@ -151,12 +158,13 @@ a:hover {
   justify-content: space-around; }
 
 .project-cell {
-  margin-bottom: 1.5em;
+  margin-bottom: 2em;
   width: 30%;
   min-width: 15rem;
-  background-color: #66FFB2;
+  background-color: #e0e0be;
   padding: 1.2em;
-  border-radius: 4px; }
+  border-radius: 4px;
+  border-top: 1em solid #66FFB2; }
 
 .project-image {
   border-radius: 2px; }

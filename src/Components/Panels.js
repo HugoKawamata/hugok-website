@@ -72,5 +72,5 @@ export default class Panels extends React.Component {
                 {panels}
             </div>
         );
-    }
-}
+    };
+};
