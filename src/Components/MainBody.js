@@ -74,7 +74,7 @@ export default class MainBody extends React.Component {
                         <div className="project-row">
                             <div className="project-cell">
                                 <a href="http://hugokawamata.com/palettepicker.html" >
-                                    <img className="project-image" src="images/palette.png" alt="Palette Picker"/>
+                                    <img className="project-image" src="images/palettepicker.png" alt="Palette Picker"/>
                                 </a>
                                 <div className="project-name">
                                     <a href="https://github.com/HugoKawamata/PalettePicker" >
