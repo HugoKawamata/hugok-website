@@ -123,6 +123,18 @@ a:hover {
     }
 }
 
+@media (max-width: 788px) {
+    .nav-left, .nav-right {
+        height: 70px;
+        flex-direction: column;
+        padding-top:10px;
+
+        .nav-item {
+            margin:auto;
+        }
+    }
+}
+
 .logo-container {
     width: 35px;
     display: flex;
