@@ -35,7 +35,7 @@ export default class MainBody extends React.Component {
                                     <h2>I want to work with you</h2>
                                     <p>I'm currently looking for internships and work experience in the industry.
                                         I'm very proficient with 
-                                        HTML, CSS and Javascript (especially CSS), and am also experienced with Java, C, Python and Requirements Engineering.
+                                        HTML, CSS and Javascript (especially CSS), and am also experienced with React, Java, C, Python and Requirements Engineering.
                                         I'm currently studying computer science at the University of Queensland. 
                                     </p>
                                 </div>
@@ -73,19 +73,19 @@ export default class MainBody extends React.Component {
                         </div>
                         <div className="project-row">
                             <div className="project-cell">
-                                <a href="http://hugokawamata.com/palettepicker.html" >
-                                    <img className="project-image" src="images/palette.png" alt="Palette Picker"/>
+                                <a href="https://www.facebook.com/forvaluemtg" >
+                                    <img className="project-image" src="images/forvalue.png" alt="For Value"/>
                                 </a>
                                 <div className="project-name">
-                                    <a href="https://github.com/HugoKawamata/PalettePicker" >
+                                    <a href="https://github.com/HugoKawamata/for-value" >
                                         <i className="fa fa-github" aria-hidden="true"></i>
                                     </a>
-                                    <a href="http://hugokawamata.com/palettepicker.html" >
+                                    <a href="https://www.facebook.com/forvaluemtg" >
                                         Palette Picker
                                     </a>
                                 </div>
                                 <div className="project-desc">
-                                    A react web app which allows users to plan colour schemes for website design. 
+                                    A chatbot that allows users to quickly query MTG card prices.
                                 </div>
                             </div>
                             <div className="project-cell">
