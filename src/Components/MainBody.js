@@ -35,7 +35,7 @@ export default class MainBody extends React.Component {
                                     <h2>I want to work with you</h2>
                                     <p>I'm currently looking for internships and work experience in the industry.
                                         I'm very proficient with 
-                                        HTML, CSS and Javascript (especially CSS), and am also experienced with Java, C, Python and Requirements Engineering.
+                                        HTML, CSS and Javascript (especially CSS), and am also experienced with React, Java, C, Python and Requirements Engineering.
                                         I'm currently studying computer science at the University of Queensland. 
                                     </p>
                                 </div>
@@ -73,19 +73,19 @@ export default class MainBody extends React.Component {
                         </div>
                         <div className="project-row">
                             <div className="project-cell">
-                                <a href="http://hugokawamata.com/palettepicker.html" >
-                                    <img className="project-image" src="images/palettepicker.png" alt="Palette Picker"/>
+                                <a href="https://www.facebook.com/forvaluemtg" >
+                                    <img className="project-image" src="images/forvalue.png" alt="For Value"/>
                                 </a>
                                 <div className="project-name">
-                                    <a href="https://github.com/HugoKawamata/PalettePicker" >
+                                    <a href="https://github.com/HugoKawamata/for-value" >
                                         <i className="fa fa-github" aria-hidden="true"></i>
                                     </a>
-                                    <a href="http://hugokawamata.com/palettepicker.html" >
-                                        Palette Picker
+                                    <a href="https://www.facebook.com/forvaluemtg" >
+                                        For Value: MTG Price Calculator
                                     </a>
                                 </div>
                                 <div className="project-desc">
-                                    A react web app which allows users to plan colour schemes for website design. 
+                                    A chatbot that allows users to quickly query MTG card prices.
                                 </div>
                             </div>
                             <div className="project-cell">
@@ -181,41 +181,51 @@ export default class MainBody extends React.Component {
                                 <p>
                                     Since childhood I've loved card games of all kinds, and I still love playing Magic.
                                     I mainly play EDH, but I've also enjoyed standard and drafting. My EDH decks are currently: 
-                                    Varolz, Karlov, Tomorrow, Omnath, and Zedruu.
                                 </p>
                                 <div className="magic-row">
                                     <div className="magic-cell">
-                                        <img src="images/magic/varolz.jpg" alt="Varolz"/>
-                                        Shadow Combo
+                                        <img src="images/magic/sidisi.jpg" alt="Sidisi"/>
+                                        The Pits
                                     </div>
                                     <div className="magic-cell">
-                                        <img src="images/magic/karlov.jpg" alt="Karlov"/>
-                                        Trigger Warning
+                                        <img src="images/magic/horde.jpg" alt="Horde"/>
+                                        Gatecount
+                                    </div>
+                                    <div className="magic-cell">
+                                        <img src="images/magic/omnath.jpg" alt="Omnath"/>
+                                        Wheelchair Access
+                                    </div>
+                                    <div className="magic-cell">
+                                        <img src="images/magic/sygg.jpg" alt="Sygg"/>
+                                        Sneaky Boyes
+                                    </div>
+                                    <div className="magic-cell">
+                                        <img src="images/magic/vorel.jpg" alt="Vorel"/>
+                                        'Tis The Season
+                                    </div>
+                                </div>
+                                <div className="magic-row">
+                                    <div className="magic-cell">
+                                        <img src="images/magic/jhoira.jpg" alt="Jhoira"/>
+                                        Not Magic
+                                    </div>
+                                    <div className="magic-cell">
+                                        <img src="images/magic/obnix.jpg" alt="Ob Nixilis"/>
+                                        The Biggest, Blackest Deck
+                                    </div>
+                                    <div className="magic-cell">
+                                        <img src="images/magic/isperia.jpg" alt="Isperia"/>
+                                        Fluffytown
+                                    </div>
+                                    <div className="magic-cell">
+                                        <img src="images/magic/roon.jpg" alt="Roon"/>
+                                        Flickery Clones
                                     </div>
                                     <div className="magic-cell">
                                         <img src="images/magic/tomorrow.jpg" alt="Tomorrow"/>
                                         Dude, Where's My Win-con?
                                     </div>
-                                    <div className="magic-cell">
-                                        <img src="images/magic/omnath.jpg" alt="Omnath"/>
-                                        Classic Ramp
-                                    </div>
-                                    <div className="magic-cell">
-                                        <img src="images/magic/zedruu.jpg" alt="Zedruu"/>
-                                        Pillowfort Shenanigans
-                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div className="home-section">
-                            <div className="home-text">
-                                <h2>Game Design</h2>
-                                <p>
-                                    I currently have a slowly evolving card game in the works as a personal project. 
-                                    Tabletop game design is something I'm very passionate about, and I've always wanted 
-                                    to try to make a card game. At the moment, it's looking like a hand building game 
-                                    with a space/espionage theme.
-                                </p>
                             </div>
                         </div>
 
