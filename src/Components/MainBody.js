@@ -185,37 +185,48 @@ export default class MainBody extends React.Component {
                                 </p>
                                 <div className="magic-row">
                                     <div className="magic-cell">
-                                        <img src="images/magic/varolz.jpg" alt="Varolz"/>
-                                        Shadow Combo
+                                        <img src="images/magic/sidisi.jpg" alt="Sidisi"/>
+                                        Dredge Combo
                                     </div>
                                     <div className="magic-cell">
-                                        <img src="images/magic/karlov.jpg" alt="Karlov"/>
-                                        Trigger Warning
+                                        <img src="images/magic/horde.jpg" alt="Horde"/>
+                                        Gatecount
+                                    </div>
+                                    <div className="magic-cell">
+                                        <img src="images/magic/omnath.jpg" alt="Omnath"/>
+                                        Wheelchair Access
+                                    </div>
+                                    <div className="magic-cell">
+                                        <img src="images/magic/sygg.jpg" alt="Sygg"/>
+                                        Rogue Tribal
+                                    </div>
+                                    <div className="magic-cell">
+                                        <img src="images/magic/vorel.jpg" alt="Vorel"/>
+                                        Doubling Season
+                                    </div>
+                                </div>
+                                <div className="magic-row">
+                                    <div className="magic-cell">
+                                        <img src="images/magic/jhoira.jpg" alt="Jhoira"/>
+                                        Not Magic
+                                    </div>
+                                    <div className="magic-cell">
+                                        <img src="images/magic/obnix.jpg" alt="Ob-Nixilis"/>
+                                        The Biggest, Blackest Deck
+                                    </div>
+                                    <div className="magic-cell">
+                                        <img src="images/magic/isperia.jpg" alt="Isperia"/>
+                                        Fluffytown
+                                    </div>
+                                    <div className="magic-cell">
+                                        <img src="images/magic/roon.jpg" alt="Roon"/>
+                                        Flickery Clones
                                     </div>
                                     <div className="magic-cell">
                                         <img src="images/magic/tomorrow.jpg" alt="Tomorrow"/>
                                         Dude, Where's My Win-con?
                                     </div>
-                                    <div className="magic-cell">
-                                        <img src="images/magic/omnath.jpg" alt="Omnath"/>
-                                        Classic Ramp
-                                    </div>
-                                    <div className="magic-cell">
-                                        <img src="images/magic/zedruu.jpg" alt="Zedruu"/>
-                                        Pillowfort Shenanigans
-                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div className="home-section">
-                            <div className="home-text">
-                                <h2>Game Design</h2>
-                                <p>
-                                    I currently have a slowly evolving card game in the works as a personal project. 
-                                    Tabletop game design is something I'm very passionate about, and I've always wanted 
-                                    to try to make a card game. At the moment, it's looking like a hand building game 
-                                    with a space/espionage theme.
-                                </p>
                             </div>
                         </div>
 
