@@ -81,7 +81,7 @@ export default class MainBody extends React.Component {
                                         <i className="fa fa-github" aria-hidden="true"></i>
                                     </a>
                                     <a href="https://www.facebook.com/forvaluemtg" >
-                                        Palette Picker
+                                        For Value: MTG Price Calculator
                                     </a>
                                 </div>
                                 <div className="project-desc">
@@ -181,12 +181,11 @@ export default class MainBody extends React.Component {
                                 <p>
                                     Since childhood I've loved card games of all kinds, and I still love playing Magic.
                                     I mainly play EDH, but I've also enjoyed standard and drafting. My EDH decks are currently: 
-                                    Varolz, Karlov, Tomorrow, Omnath, and Zedruu.
                                 </p>
                                 <div className="magic-row">
                                     <div className="magic-cell">
                                         <img src="images/magic/sidisi.jpg" alt="Sidisi"/>
-                                        Dredge Combo
+                                        The Pits
                                     </div>
                                     <div className="magic-cell">
                                         <img src="images/magic/horde.jpg" alt="Horde"/>
@@ -198,11 +197,11 @@ export default class MainBody extends React.Component {
                                     </div>
                                     <div className="magic-cell">
                                         <img src="images/magic/sygg.jpg" alt="Sygg"/>
-                                        Rogue Tribal
+                                        Sneaky Boyes
                                     </div>
                                     <div className="magic-cell">
                                         <img src="images/magic/vorel.jpg" alt="Vorel"/>
-                                        Doubling Season
+                                        'Tis The Season
                                     </div>
                                 </div>
                                 <div className="magic-row">
@@ -211,7 +210,7 @@ export default class MainBody extends React.Component {
                                         Not Magic
                                     </div>
                                     <div className="magic-cell">
-                                        <img src="images/magic/obnix.jpg" alt="Ob-Nixilis"/>
+                                        <img src="images/magic/obnix.jpg" alt="Ob Nixilis"/>
                                         The Biggest, Blackest Deck
                                     </div>
                                     <div className="magic-cell">
