@@ -23,7 +23,7 @@ a:hover {
 
     .introduction {
         padding-top: 15vh;
-        padding-bottom: 2em;
+        padding-bottom: 1em;
     }
 }
 
@@ -205,7 +205,7 @@ a:hover {
 
 }
 
-.home-section {
+.home-section, .personal-section {
     padding: 4rem 20%;
     display: flex;
     flex-wrap: nowrap;
@@ -275,6 +275,10 @@ a:hover {
 
 /* ---- Personal ---- */
 
+.personal-section {
+    padding-top: 0;
+}
+
 .magic-row {
     display: flex;
     justify-content: space-around;
@@ -306,6 +310,10 @@ a:hover {
             top: 0;
             right: 0;
             z-index: 0;
+
+            &:hover {
+                z-index: 2;
+            }
         }
     }
 }

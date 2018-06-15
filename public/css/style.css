@@ -19,7 +19,7 @@ a:hover {
   justify-content: center; }
   .heading-container .introduction {
     padding-top: 15vh;
-    padding-bottom: 2em; }
+    padding-bottom: 1em; }
 
 .big-hero {
   height: 90vh;
@@ -140,17 +140,17 @@ a:hover {
 #content {
   background-color: #f9f9de; }
 
-.home-section {
+.home-section, .personal-section {
   padding: 4rem 20%;
   display: flex;
   flex-wrap: nowrap; }
-  .home-section h2 {
+  .home-section h2, .personal-section h2 {
     font-size: 2rem;
     font-family: "Raleway", sans-serif; }
-  .home-section .home-icon {
+  .home-section .home-icon, .personal-section .home-icon {
     font-size: 5rem;
     padding: 1rem; }
-  .home-section p {
+  .home-section p, .personal-section p {
     font-family: "Open Sans", sans-serif; }
 
 @media (max-width: 788px) {
@@ -188,6 +188,9 @@ a:hover {
   color: #666; }
 
 /* ---- Personal ---- */
+.personal-section {
+  padding-top: 0; }
+
 .magic-row {
   display: flex;
   justify-content: space-around;
@@ -216,5 +219,7 @@ a:hover {
       top: 0;
       right: 0;
       z-index: 0; }
+      .magic-partners img:last-child:hover {
+        z-index: 2; }
 
 /*# sourceMappingURL=style.css.map */

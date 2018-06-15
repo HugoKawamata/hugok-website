@@ -38,11 +38,32 @@ export default class Personal extends React.Component {
             Personal
           </div>
         </div>
-        <div className="home-section">
+        <div className="personal-section">
+          <div className="home-text">
+            <h2>Music</h2>
+            <p>
+              I love how listening to music can immediately and vividly make you remember
+              how you felt when you first heard it. I love discovering new music through various
+              channels, like bandcamp, reddit, and friends' recommendations, and I try to listen
+              to many different genres and artists.
+            </p>
+            <p>
+              In 2017 I made a command line program called Spozberry which integrates with Mopidy, a music server
+              which can stream music from your Spotify account. It constantly checks to see if your
+              phone's MAC address is connected to your wifi, and starts playing music automatically
+              if it is. It's currently extremely buggy and untested, but I hope to have a stable release
+              by the end of 2018.
+            </p>
+          </div>
+        </div>
+
+        <div className="personal-section">
           <div className="home-text">
             <h2>Magic</h2>
             <p>
               Since childhood I've loved card games of all kinds, and I still love playing Magic.
+              I try to play at least once a week, with my friends and other regulars at my local
+              game store, Vault Games.
               I mainly play EDH, but I've also enjoyed standard and drafting. My EDH decks are currently: 
             </p>
 
@@ -59,6 +80,18 @@ export default class Personal extends React.Component {
             </div>
           </div>
         </div>
+        
+        <div className="personal-section">
+          <div className="home-text">
+            <h2>Other Interests</h2>
+            <p>Some of my other interests include drinking tea, reading (currently reading 
+              <a href="https://parahumans.wordpress.com/" target="_blank"> Worm</a>), lifting heavy objects, making memes,
+              binge watching YouTube videos, and the occasional video game or TV show (Seinfeld, Silicon Valley, and
+              Community are favourites).
+            </p>
+          </div>
+        </div>
+
       </div>
     );
   }
