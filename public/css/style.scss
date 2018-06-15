@@ -273,39 +273,39 @@ a:hover {
     color: #666;
 }
 
+/* ---- Personal ---- */
+
 .magic-row {
-    margin-top: 2em;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
 .magic-cell {
-    width: 17%;
-    min-width: 8em;
+    margin-top: 2em;
+    width: $card-width;
     text-align: center;
     font-family: $h-font;
     font-weight: bold;
 }
 
 .magic-partners {
-    width: 128px;
-    display:inline;
-    max-width: 100%;
+    width: $card-width;
     position: relative;
+    padding-top: $card-height + 8px; // Extra padding to align deck name
     img {
-        width: 100px;
-    }
-    &:first-child {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        z-index: 1;
-    }
-    &:last-child {
-        position: absolute;
-        top: 0;
-        right: 0;
-        z-index: 0;
+        width: 180px; // 20% of $card-width
+        &:first-child {
+            position: absolute;
+            top: 28px; // offset to align cards
+            left: 0;
+            z-index: 1;
+        }
+        &:last-child {
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 0;
+        }
     }
 }

@@ -1,5 +1,34 @@
 import React from 'react';
 
+class MagicCell extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return (
+      <div className="magic-cell">
+        <img src={"images/magic/"+this.props.imgName+".jpg"} alt={this.props.imgName}/>
+        {this.props.deckName}
+      </div>
+    )
+  }
+}
+
+class PartnerMagicCell extends React.Component {
+  render() {
+    return (
+      <div className="magic-cell">
+        <div className="magic-partners">
+          <img src={"images/magic/"+this.props.frontImgName+".jpg"} alt={this.props.frontImgName} />
+          <img src={"images/magic/"+this.props.backImgName+".jpg"} alt={this.props.backImgName} />
+        </div>
+        {this.props.deckName}
+      </div>
+    )
+  }
+}
+
 export default class Personal extends React.Component {
   render() {
     return (
@@ -18,45 +47,15 @@ export default class Personal extends React.Component {
             </p>
 
             <div className="magic-row">
-              <div className="magic-cell">
-                <img src="images/magic/sidisi.jpg" alt="Sidisi"/>
-                Graveyard Combo
-              </div>
-              <div className="magic-cell">
-                <img src="images/magic/horde.jpg" alt="Horde"/>
-                Elemental Tribal
-              </div>
-              <div className="magic-cell">
-                <img src="images/magic/omnath.jpg" alt="Omnath"/>
-                Big Ramp
-              </div>
-              <div className="magic-cell">
-                <img src="images/magic/gitrog.jpg" alt="Gitrog"/>
-                Basics Only Frog's Eggs
-              </div>
-              <div className="magic-cell">
-                <img src="images/magic/sygg.jpg" alt="Sygg"/>
-                Rogues and Ninjas
-              </div>
-            </div>
-
-            <div className="magic-row">
-              <div className="magic-cell">
-                <img src="images/magic/vorel.jpg" alt="Vorel"/>
-                Punch you for 256
-              </div>
-              <div className="magic-cell">
-                <img src="images/magic/roon.jpg" alt="Roon"/>
-                Clone Hug
-              </div>
-              <div className="magic-cell">
-                <img src="images/magic/obnix.jpg" alt="Ob Nixilis"/>
-                Big Ramp 2: Demon Boogaloo
-              </div>
-              <div className="magic-cell">
-                <img src="images/magic/sidar.jpg" alt="Sidar"/>
-                Infect Boys
-              </div>
+              <MagicCell imgName="sidisi" deckName="Graveyard Combo"/>
+              <MagicCell imgName="horde" deckName="Elemental Tribal"/>
+              <MagicCell imgName="omnath" deckName="Big Ramp"/>
+              <MagicCell imgName="gitrog" deckName="Basic Frog's Eggs"/>
+              <MagicCell imgName="sygg" deckName="Rogues and Ninjas"/>
+              <MagicCell imgName="vorel" deckName="2^n Tribal"/>
+              <MagicCell imgName="roon" deckName="Clone Hug"/>
+              <MagicCell imgName="obnix" deckName="Big Ramp 2: Demon Boogaloo"/>
+              <PartnerMagicCell frontImgName="sidar" backImgName="bruse" deckName="Oof"/>
             </div>
           </div>
         </div>

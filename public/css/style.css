@@ -1,5 +1,6 @@
 /* ---- Colors ---- */
 /* ---- Other ---- */
+/* ---- Magic ---- */
 html {
   background-color: #f9f9de; }
 
@@ -186,35 +187,34 @@ a:hover {
 .project-desc {
   color: #666; }
 
+/* ---- Personal ---- */
 .magic-row {
-  margin-top: 2em;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap; }
 
 .magic-cell {
-  width: 17%;
-  min-width: 8em;
+  margin-top: 2em;
+  width: 200px;
   text-align: center;
   font-family: "Raleway", sans-serif;
   font-weight: bold; }
 
 .magic-partners {
-  width: 128px;
-  display: inline;
-  max-width: 100%;
-  position: relative; }
+  width: 200px;
+  position: relative;
+  padding-top: 287px; }
   .magic-partners img {
-    width: 100px; }
-  .magic-partners:first-child {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 1; }
-  .magic-partners:last-child {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 0; }
+    width: 180px; }
+    .magic-partners img:first-child {
+      position: absolute;
+      top: 28px;
+      left: 0;
+      z-index: 1; }
+    .magic-partners img:last-child {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 0; }
 
 /*# sourceMappingURL=style.css.map */
