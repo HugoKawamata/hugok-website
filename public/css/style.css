@@ -175,7 +175,8 @@ a:hover {
   border-top: 1em solid #66FFB2; }
 
 .project-image {
-  border-radius: 2px;
+  width: 100%;
+  border-radius: 20px;
   margin: auto; }
 
 .project-name {

@@ -1,112 +1,83 @@
 import React from 'react';
 
+class Project extends React.Component {
+  render() {
+    return (
+      <div className="project-cell">
+        <a href={this.props.github} >
+          <img className="project-image" src={"images/logos/"+this.props.imgName+".png"} alt={this.props.imgAlt}/>
+        </a>
+        <div className="project-name">
+          <a href={this.props.github} >
+            {this.props.name}
+          </a>
+        </div>
+        <div className="project-desc">
+          {this.props.desc}
+        </div>
+      </div>
+    )
+  }
+}
+
 export default class Projects extends React.Component {
   render() {
     return ( 
       <div className="main-body">
-          <div className="heading-container">
-              <div className="introduction">
-                  Projects
-                  <p className="subtitle">
-                      <a href="https://github.com/HugoKawamata" >
-                          Visit my Github 
-                          <i className="fa fa-github" aria-hidden="true"></i>
-                      </a>
-                  </p>
-              </div>
+        <div className="heading-container">
+          <div className="introduction">
+            Projects
+            <p className="subtitle">
+              <a href="https://github.com/HugoKawamata" >
+                Visit my Github 
+                <i className="fa fa-github" aria-hidden="true"></i>
+              </a>
+            </p>
           </div>
+        </div>
           <div className="project-row">
-              <div className="project-cell">
-                  <a href="https://www.facebook.com/forvaluemtg" >
-                      <img className="project-image" src="images/forvalue.png" alt="For Value"/>
-                  </a>
-                  <div className="project-name">
-                      <a href="https://github.com/HugoKawamata/for-value" >
-                          <i className="fa fa-github" aria-hidden="true"></i>
-                      </a>
-                      <a href="https://www.facebook.com/forvaluemtg" >
-                          For Value: MTG Price Calculator
-                      </a>
-                  </div>
-                  <div className="project-desc">
-                      A chatbot that allows users to quickly query MTG card prices.
-                  </div>
-              </div>
-              <div className="project-cell">
-                  <img className="project-image" src="images/hugokawamata.png" alt="HugoKawamata.com" />
-                  <div className="project-name">
-                      <a href="https://github.com/HugoKawamata/hugok-website" >
-                          <i className="fa fa-github" aria-hidden="true"></i>
-                          HugoKawamata.com
-                      </a>
-                  </div>
-                  <div className="project-desc">
-                      A personal portfolio website for showcasing webdev experience.
-                  </div>
-              </div>
-              <div className="project-cell">
-                  <a href="http://bonsaidesign.com.au/">
-                      <img className="project-image" src="images/bonsai.png" alt="Bonsai Design" />
-                  </a>
-                  <div className="project-name">
-                      <a href="https://github.com/HugoKawamata/Bonsai-Design-Website" >
-                          <i className="fa fa-github" aria-hidden="true"></i>
-                      </a>
-                      <a href="http://bonsaidesign.com.au/">
-                          Bonsai Design
-                      </a>
-                      
-                  </div>
-                  <div className="project-desc">
-                      A pure html/css website to promote my web design business.
-                  </div>
-              </div>
-          </div>
-          <div className="project-row">
-              <div className="project-cell">
-                  <a href="https://github.com/HugoKawamata/SeinQuotePy" >
-                      <img className="project-image" src="images/seinquote.png" alt="SeinQuote"/>
-                  </a>
-                  <div className="project-name">
-                      <a href="https://github.com/HugoKawamata/SeinQuotePy" >
-                          <i className="fa fa-github" aria-hidden="true"></i>
-                          SeinQuote
-                      </a>
-                  </div>
-                  <div className="project-desc">
-                      A command line python program which searches for Seinfeld episodes based on quotes.
-                  </div>
-              </div>
-              <div className="project-cell">
-                  <a href="https://www.syncuq.com/">
-                      <img className="project-image" src="images/syncuq.png" alt="SyncUQ" />
-                  </a>
-                  <div className="project-name">
-                      <a href="https://github.com/MaxwellBo/suq">
-                          <i className="fa fa-github" aria-hidden="true"></i>
-                      </a>
-                      <a href="https://www.syncuq.com/">
-                          SyncUQ
-                      </a>
-                  </div>
-                  <div className="project-desc">
-                      A full stack web app (Postgres/Flask/Elm) which lets UQ students know when their friends are free at uni.
-                  </div>
-              </div>
-              <div className="project-cell">
-                  <a href="https://github.com/HugoKawamata/scpnet">
-                      <img className="project-image" src="images/scpnet.png" alt="SCPnet" />
-                  </a>
-                  <div className="project-name">
-                      <a href="https://github.com/HugoKawamata/scpnet">
-                          <i className="fa fa-github" aria-hidden="true"></i>
-                          SCPnet
-                      </a>
-                  </div>
-                  <div className="project-desc">
-                      A command line python program which allows users to read SCP articles from the CLI.
-                  </div>
-              </div>
+            <Project
+              github="https://github.com/HugoKawamata/for-value"
+              imgName="forvalue"
+              imgAlt="For Value"
+              name="For Value: MTG Price Lookup"
+              desc="A chatbot thta allows users to quickly query MTG card prices."
+            />
+            <Project
+              github="https://github.com/HugoKawamata/hugok-website"
+              imgName="hugo"
+              imgAlt="HugoKawamata.com"
+              name="HugoKawamata.com"
+              desc="A personal portfolio website for showcasing my experience."
+            />
+            <Project
+              github="https://github.com/HugoKawamata/InLieu"
+              imgName="inlieu"
+              imgAlt="InLieu"
+              name="InLieu"
+              desc="A React web app which allows users to rate and review public toilets."
+            />
+            <Project
+              github="https://github.com/HugoKawamata/Bonsai-Design-Website"
+              imgName="bonsai"
+              imgAlt="Bonsai Design"
+              name="Bonsai Design"
+              desc="A pure html/css website to promote my web design business."
+            />
+            <Project
+              github="https://github.com/HugoKawamata/SeinQuotePy"
+              imgName="sein"
+              imgAlt="SeinQuote"
+              name="SeinQuote"
+              desc="A command line python program which searches for Seinfeld episodes based on quotes."
+            />
+            <Project
+              github="https://github.com/MaxwellBo/suq"
+              imgName="suq"
+              imgAlt="SyncUQ"
+              name="SyncUQ"
+              desc="A full stack web app (Postgres/Flask/Elm) which lets UQ students know when their friends are free at uni."
+            />
           </div>
       </div>
     );
