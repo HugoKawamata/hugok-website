@@ -1,21 +1,21 @@
 import React from 'react';
+import { withRouter, Link } from 'react-router-dom';
 
-export default class Navbar extends React.Component {
+const NavbarWR = withRouter(props => <Navbar {...props}/>);
+export default NavbarWR;
+
+class Navbar extends React.Component {
     render() {
         return (
             <div className="nav-container">
                 <nav className="nav">
                     <div className="nav-left">
-                        <a className={this.props.current === "about" ? "nav-item nav-current" : "nav-item"}
-                            onClick={() => this.props.changePage("about")}
-                        >
+                        <Link to="/" className={this.props.location.pathname === "/" ? "nav-item nav-current" : "nav-item"}>
                             About
-                        </a>
-                        <a className={this.props.current === "projects" ? "nav-item nav-current" : "nav-item"}
-                            onClick={() => this.props.changePage("projects")}
-                        >
+                        </Link>
+                        <Link to="/projects" className={this.props.location.pathname === "/projects" ? "nav-item nav-current" : "nav-item"}>
                             Projects
-                        </a>
+                        </Link>
                     </div>
                     <div className="nav-center">
                         <a className="nav-item">
@@ -25,12 +25,10 @@ export default class Navbar extends React.Component {
                         </a>
                     </div>
                     <div className="nav-right">
-                        <a className={this.props.current === "personal" ? "nav-item nav-current" : "nav-item"}
-                            onClick={() => this.props.changePage("personal")}
-                        >
+                        <Link to="/personal" className={this.props.location.pathname === "/personal" ? "nav-item nav-current" : "nav-item"}>
                             Personal
-                        </a>
-                        <a href="http://bonsaidesign.com.au/" className={this.props.current === "bonsai" ? "nav-item nav-current" : "nav-item"}>
+                        </Link>
+                        <a href="http://bonsaidesign.com.au/" className="nav-item">
                             Bonsai
                         </a>
                     </div>

@@ -287,3 +287,25 @@ a:hover {
     font-family: $h-font;
     font-weight: bold;
 }
+
+.magic-partners {
+    width: 128px;
+    display:inline;
+    max-width: 100%;
+    position: relative;
+    img {
+        width: 100px;
+    }
+    &:first-child {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+    }
+    &:last-child {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 0;
+    }
+}

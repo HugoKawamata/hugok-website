@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
+import { Route } from 'react-router';
 
 import './App.css';
 import Navbar from './Components/Navbar';
-import MainBody from './Components/MainBody';
+import About from './Components/PageContent/About';
+import Personal from './Components/PageContent/Personal';
+import Projects from './Components/PageContent/Projects';
 
 class App extends Component {
   constructor(props) {
@@ -23,7 +26,9 @@ class App extends Component {
     return (
       <div id="app-container">
         <Navbar current={this.state.page} changePage={(name) => this.changePage(name)}/>
-        <MainBody current={this.state.page} />
+        <Route exact={true} path="/" component={About} />
+        <Route path="/personal" component={Personal} />
+        <Route path="/projects" component={Projects} />
       </div>
     );
   }
