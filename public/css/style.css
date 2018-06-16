@@ -166,17 +166,19 @@ a:hover {
   justify-content: space-around; }
 
 .project-cell {
+  margin: 0 2%;
   margin-bottom: 2em;
-  width: 30%;
+  width: 26%;
   min-width: 15rem;
   background-color: #e0e0be;
   padding: 1.2em;
   border-radius: 4px;
-  border-top: 1em solid #66FFB2; }
+  border-top: 1em solid #66FFB2;
+  text-align: center; }
 
 .project-image {
-  width: 100%;
-  border-radius: 20px;
+  width: 25%;
+  border-radius: 20%;
   margin: auto; }
 
 .project-name {

@@ -246,18 +246,20 @@ a:hover {
 }
 
 .project-cell {
+    margin: 0 2%;
     margin-bottom: 2em;
-    width: 30%;
+    width: 26%;
     min-width: 15rem;
     background-color: $sand2;
     padding: 1.2em;
     border-radius: 4px;
     border-top: 1em solid $seagreen;
+    text-align: center;
 }
 
 .project-image {
-    width: 100%;
-    border-radius: 20px;
+    width: 25%;
+    border-radius: 20%;
     margin: auto;
 }
 
