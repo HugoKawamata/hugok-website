@@ -52,7 +52,7 @@ export default class Projects extends React.Component {
             />
             <Project
               github="https://github.com/HugoKawamata/InLieu"
-              imgName="inlieu"
+              imgName="inloo"
               imgAlt="InLieu"
               name="InLieu"
               desc="A React web app which allows users to rate and review public toilets."
