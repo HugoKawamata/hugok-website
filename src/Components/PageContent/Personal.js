@@ -43,7 +43,7 @@ export default class Personal extends React.Component {
             <h2>Music</h2>
             <p>
               I love how listening to music can immediately and vividly make you remember
-              how you felt when you first heard it. I love discovering new music through various
+              how you felt when you first heard it. I really enjoy discovering new music through various
               channels, like bandcamp, reddit, and friends' recommendations, and I try to listen
               to many different genres and artists.
             </p>
@@ -80,7 +80,7 @@ export default class Personal extends React.Component {
             </div>
           </div>
         </div>
-        
+
         <div className="personal-section">
           <div className="home-text">
             <h2>Other Interests</h2>
