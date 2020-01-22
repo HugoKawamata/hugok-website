@@ -1,0 +1,3 @@
+const myLifeIntro = `The page you've just clicked on is an exercise in self importance and is probably of no interest to you. However, if you find yourself wanting to learn more about how I live my life, feel free to read on.`
+
+const tandaMain = `I've been working at Tanda since June 2018, and came on board primarily as a React Native developer, working in the Mobile Team, a team of 4 (1 PM/designer, 1 designer, and 2 developers) as the only team maintaining and delivering features on the Tanda mobile app. A lot has happened since then, and I've been entrusted as the leading developer on the mobile app. I've also worked on a few other projects, which have helped me gain experience in Ruby on Rails and regular React.`
