@@ -1,5 +1,22 @@
 import React from 'react';
 
+class Quote extends React.Component {
+  constructor(props) {
+    super(props)
+  }
+
+  render() {
+    return (
+      <a href={this.props.link}>
+        <div className="quote-wrapper">
+          <p className="quote">"{this.props.quote}"</p>
+          <p className="quote-person">- {this.props.person}</p>
+        </div>
+      </a>
+    )
+  }
+}
+
 class MagicCell extends React.Component {
   constructor(props) {
     super(props);
@@ -40,20 +57,37 @@ export default class Personal extends React.Component {
         </div>
         <div className="personal-section">
           <div className="home-text">
-            <h2>Music</h2>
+            <h2>Hierarchy</h2>
             <p>
-              I love how listening to music can immediately and vividly make you remember
-              how you felt when you first heard it. I really enjoy discovering new music through various
-              channels, like bandcamp, reddit, and friends' recommendations, and I try to listen
-              to many different genres and artists.
+              In 2019, I published my first tabletop game, Hierarchy. It's an abstract strategy game with only 14 cards
+              and open information. You and your opponent take turns playing cards with a higher rank than the last,
+              until one player can't play a card.
             </p>
-            <p>
-              In 2017 I made a command line program called Spozberry which integrates with Mopidy, a music server
-              which can stream music from your Spotify account. It constantly checks to see if your
-              phone's MAC address is connected to your wifi, and starts playing music automatically
-              if it is. It's currently extremely buggy and untested, but I hope to have a stable release
-              by the end of 2018.
-            </p>
+            <div className="quotes-wrapper">
+              <Quote
+                quote="I highly recommend checking this out. This is a brilliant little game."
+                person="Jamey Stegmaier"
+                link="https://www.youtube.com/watch?v=UFSN2s0QAeg"
+              />
+              <Quote
+                quote="A wallet-sized marvel."
+                person="1-2-Punchboard"
+                link="http://1-2-punchboard.com/2020/05/21/weekly-pnp-hierarchy/"
+              />
+            </div>
+            <img className="hierarchy-splash" src="images/hierarchy.png" alt="Hierarchy splash art" />
+            <div className="quotes-wrapper">
+              <Quote
+                quote="Hierarchy is another strong entry in Button Shy’s line of card games that rethink the limits of limitations."
+                person="Casual Game Revolution"
+                link="https://casualgamerevolution.com/blog/2019/10/preview-start-as-a-lowly-assassin-and-become-a-beloved-king-in-hierarchy"
+              />
+              <Quote
+                quote="For such a compact and ‘light’ game, the strategy required for success keeps the game extremely engaging."
+                person="Purple Phoenix Games"
+                link="http://www.purplephoenixgames.com/hierarchy-preview/"
+              />
+            </div>
           </div>
         </div>
 

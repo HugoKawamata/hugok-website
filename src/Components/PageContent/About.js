@@ -27,11 +27,10 @@ export default class About extends React.Component {
                       <span role="img" aria-label="working-hugo">👨🏽‍💻</span>
                   </div>
                   <div className="home-text">
-                      <h2>I want to work with you</h2>
-                      <p>I'm currently looking for internships and work experience in the industry.
-                          I'm very proficient with 
-                          HTML, CSS and Javascript (especially CSS), and am also experienced with React, Java, C, Python and Requirements Engineering.
-                          I'm currently studying computer science at the University of Queensland. 
+                      <h2>My Work</h2>
+                      <p>
+                        I've been working at Tanda since 2018. The tech I use on a daily basis includes React Native, React,
+                        Ruby on Rails, and GraphQL.
                       </p>
                   </div>
               </div>
@@ -42,9 +41,24 @@ export default class About extends React.Component {
                   </div>
                   <div className="home-text">
                       <h2>Game Design</h2>
-                      <p>I'm also a huge fan of Mark Rosewater (Head Designer of Magic: The Gathering). Game theory and game design (particularly tabletop) 
-                          are big interests of mine. Of course, I'm also an avid Magic player, so hit me up if you'd be interested in 
-                          playing some EDH.
+                      <p>
+                          As well as software, I also have an interest in tabletop game design. In 2019, I published my first
+                          card game, Hierarchy, with Button Shy Games.
+                      </p>
+                  </div>
+              </div>
+              <div className="home-section">
+                  <div className="home-icon">
+                      <span role="img" aria-label="dice">⛩</span>
+                      
+                  </div>
+                  <div className="home-text">
+                      <h2>Japanese</h2>
+                      <p>
+                          I'm half Japanese, but I never really learned how to speak Japanese growing up. In 2019, I started
+                          teaching myself Japanese with the goal of having a conversation when I went on holiday there in January 2020,
+                          and it was a great success! The experience of frantically teaching myself conversational Japanese inspired me
+                          to start work on a language learning app, Issei.
                       </p>
                   </div>
               </div>

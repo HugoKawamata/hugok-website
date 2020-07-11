@@ -28,8 +28,8 @@ class Navbar extends React.Component {
                         <Link to="/personal" className={this.props.location.pathname === "/personal" ? "nav-item nav-current" : "nav-item"}>
                             Personal
                         </Link>
-                        <a href="http://bonsaidesign.com.au/" className="nav-item">
-                            Bonsai
+                        <a href="https://www.issei.com.au" className="nav-item">
+                            Issei
                         </a>
                     </div>
                 </nav>

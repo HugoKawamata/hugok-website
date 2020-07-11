@@ -44,11 +44,11 @@ export default class Projects extends React.Component {
               desc="A chatbot thta allows users to quickly query MTG card prices."
             />
             <Project
-              github="https://github.com/HugoKawamata/hugok-website"
-              imgName="hugo"
-              imgAlt="HugoKawamata.com"
-              name="HugoKawamata.com"
-              desc="A personal portfolio website for showcasing my experience."
+              github="https://www.issei.com.au"
+              imgName="issei"
+              imgAlt="Issei"
+              name="Issei: Holistic Japanese Learning"
+              desc="An app that teaches Japanese holistically, with an emphasis on context."
             />
             <Project
               github="https://github.com/HugoKawamata/InLieu"
