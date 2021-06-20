@@ -23,9 +23,9 @@ export function Navbar (props) {
           </Link>
         </div>
           <div className="nav-center">
-            <a className="nav-item" onClick={() => dispatch(changeLanguage(lang == "ja" ? "en" : "ja"))}>
+            <a className="nav-item" onClick={() => dispatch(changeLanguage(lang === "ja" ? "en" : "ja"))}>
               <div className="logo-container">
-                <span className="flag" role="img" aria-label="language-switcher">{lang == "ja" ? "🇦🇺" : "🇯🇵"}</span>
+                <span className="flag" role="img" aria-label="language-switcher">{lang === "ja" ? "🇦🇺" : "🇯🇵"}</span>
               </div>
             </a>
           </div>
