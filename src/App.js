@@ -3,7 +3,7 @@ import { Route } from 'react-router';
 
 import './App.css';
 import Navbar from './Components/Navbar';
-import About from './Components/PageContent/About';
+import Home from './Components/PageContent/Home';
 import Personal from './Components/PageContent/Personal';
 import Projects from './Components/PageContent/Projects';
 
@@ -26,7 +26,7 @@ class App extends Component {
     return (
       <div id="app-container">
         <Navbar current={this.state.page} changePage={(name) => this.changePage(name)}/>
-        <Route exact={true} path="/" component={About} />
+        <Route exact={true} path="/" component={Home} />
         <Route path="/personal" component={Personal} />
         <Route path="/projects" component={Projects} />
       </div>
