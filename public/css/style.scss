@@ -1,3 +1,4 @@
+@use 'sass:math';
 @import 'variables';
 
 html {
@@ -141,9 +142,12 @@ a:hover {
     align-content: center;
 }
 
+.flag {
+    font-size: 3rem;
+}
+
 .logo {
     border-radius: 3px;
-
 }
 
 .panels-container {
@@ -165,19 +169,19 @@ a:hover {
     background-size: cover;
     
     .desktop-row {
-        height: $hero-height / 12;
+        height: math.div($hero-height, 24);
 
         .panel-comp {
-            width: (100/24) * 1%;
+            width: math.div(100, 12) * 1%;
             transition: background-color $panel-flip-time;
         }
     }
 
     .mobile-row {
-        height: $hero-height / 24;
+        height: math.div($hero-height, 24);
 
         .panel-comp {
-            width: (100/12) * 1%;
+            width: math.div(100, 12) * 1%;
             transition: background-color $panel-flip-time-mobile;
         }
     }

@@ -42,7 +42,7 @@ export function Home(props) {
         </section>
         <section className="home-section">
           <div className="home-icon">
-            <span role="img" aria-label="dice">⛩</span>
+            <span role="img" aria-label="torii">⛩</span>
           </div>
           <div className="home-text">
             <h2>{i18n.japaneseHeading[lang]}</h2>
