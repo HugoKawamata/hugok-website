@@ -1,11 +1,11 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 
-import i18n from './i18n'
+import { home as i18n } from './i18n'
 import Hero from '../Hero';
 import Panels from '../Panels';
 
-export function About(props) {
+export function Home(props) {
   const lang = useSelector((state) => state.config.language)
 
   return (
@@ -54,4 +54,4 @@ export function About(props) {
   );
 }
 
-export default About
+export default Home
