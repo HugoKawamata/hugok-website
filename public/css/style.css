@@ -152,10 +152,10 @@ a:hover {
   background-size: cover;
 }
 .panels .desktop-row {
-  height: 3.75vh;
+  height: 7.5vh;
 }
 .panels .desktop-row .panel-comp {
-  width: 8.3333333333%;
+  width: 4.1666666667%;
   transition: background-color 0.5s;
 }
 .panels .mobile-row {
