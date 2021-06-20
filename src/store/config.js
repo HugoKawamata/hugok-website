@@ -1,4 +1,5 @@
-import { createSlice } from '@reduxjs/toolkit'
+/* @flow */
+import { createSlice } from "@reduxjs/toolkit";
 
 export const configSlice = createSlice({
   name: "config",
@@ -7,11 +8,11 @@ export const configSlice = createSlice({
   },
   reducers: {
     changeLanguage: (state, action) => {
-      state.language = action.payload
+      state.language = action.payload;
     },
-  }
-})
+  },
+});
 
-export const { changeLanguage } = configSlice.actions
+export const { changeLanguage } = configSlice.actions;
 
-export default configSlice.reducer
+export default configSlice.reducer;

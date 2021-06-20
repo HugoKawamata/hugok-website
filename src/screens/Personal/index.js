@@ -1,6 +1,7 @@
-import React from 'react';
-import { useSelector } from 'react-redux'
-import { personal as i18n } from './i18n'
+/* @flow */
+import React from "react";
+import { useSelector } from "react-redux";
+import i18n from "./i18n";
 
 function Quote(props) {
   return (
@@ -10,38 +11,42 @@ function Quote(props) {
         <p className="quote-person">- {props.person}</p>
       </div>
     </a>
-  )
+  );
 }
 
 function MagicCell(props) {
   return (
     <div className="magic-cell">
-      <img src={"images/magic/"+props.imgName+".jpg"} alt={props.imgName}/>
+      <img src={`images/magic/${props.imgName}.jpg`} alt={props.imgName} />
       {props.deckName}
     </div>
-  )
+  );
 }
 
 function PartnerMagicCell(props) {
   return (
     <div className="magic-cell">
       <div className="magic-partners">
-        <img src={"images/magic/"+props.frontImgName+".jpg"} alt={props.frontImgName} />
-        <img src={"images/magic/"+props.backImgName+".jpg"} alt={props.backImgName} />
+        <img
+          src={`images/magic/${props.frontImgName}.jpg`}
+          alt={props.frontImgName}
+        />
+        <img
+          src={`images/magic/${props.backImgName}.jpg`}
+          alt={props.backImgName}
+        />
       </div>
       {props.deckName}
     </div>
-  )
+  );
 }
 
 export function Personal(props) {
-  const lang = useSelector((state) => state.config.language)
+  const lang = useSelector((state) => state.config.language);
   return (
     <div className="main-body">
       <div className="heading-container">
-        <div className="introduction">
-          {i18n.personal[lang]}
-        </div>
+        <div className="introduction">{i18n.personal[lang]}</div>
       </div>
       <div className="personal-section">
         <div className="home-text">
@@ -59,7 +64,11 @@ export function Personal(props) {
               link="http://1-2-punchboard.com/2020/05/21/weekly-pnp-hierarchy/"
             />
           </div>
-          <img className="hierarchy-splash" src="images/hierarchy.png" alt="Hierarchy splash art" />
+          <img
+            className="hierarchy-splash"
+            src="images/hierarchy.png"
+            alt="Hierarchy splash art"
+          />
           <div className="quotes-wrapper">
             <Quote
               quote="Hierarchy is another strong entry in Button Shy’s line of card games that rethink the limits of limitations."
@@ -80,15 +89,19 @@ export function Personal(props) {
           <h2>{i18n.magicTitle[lang]}</h2>
           <p>{i18n.magicBody[lang]}</p>
           <div className="magic-row">
-            <MagicCell imgName="sidisi" deckName="Graveyard Combo"/>
-            <MagicCell imgName="horde" deckName="Elemental Tribal"/>
-            <MagicCell imgName="omnath" deckName="Big Ramp"/>
-            <MagicCell imgName="gitrog" deckName="Basic Frog's Eggs"/>
-            <MagicCell imgName="sygg" deckName="Rogues and Ninjas"/>
-            <MagicCell imgName="vorel" deckName="2^n Tribal"/>
-            <MagicCell imgName="roon" deckName="Clone Hug"/>
-            <MagicCell imgName="obnix" deckName="Big Ramp 2: Demon Boogaloo"/>
-            <PartnerMagicCell frontImgName="sidar" backImgName="bruse" deckName="Oof"/>
+            <MagicCell imgName="sidisi" deckName="Graveyard Combo" />
+            <MagicCell imgName="horde" deckName="Elemental Tribal" />
+            <MagicCell imgName="omnath" deckName="Big Ramp" />
+            <MagicCell imgName="gitrog" deckName="Basic Frog's Eggs" />
+            <MagicCell imgName="sygg" deckName="Rogues and Ninjas" />
+            <MagicCell imgName="vorel" deckName="2^n Tribal" />
+            <MagicCell imgName="roon" deckName="Clone Hug" />
+            <MagicCell imgName="obnix" deckName="Big Ramp 2: Demon Boogaloo" />
+            <PartnerMagicCell
+              frontImgName="sidar"
+              backImgName="bruse"
+              deckName="Oof"
+            />
           </div>
         </div>
       </div>
@@ -96,4 +109,4 @@ export function Personal(props) {
   );
 }
 
-export default Personal
+export default Personal;
