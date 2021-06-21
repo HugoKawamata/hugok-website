@@ -1,353 +1,348 @@
-@import 'variables';
+@import "variables";
 
 html {
-    background-color: $sand
+  background-color: $sand;
 }
 
 a {
-    color: #444;
-    transition: color 0.86s;
+  color: #444;
+  transition: color 0.86s;
 }
 
 a:hover {
-    color: $secgreen;
+  color: $secgreen;
 }
 
 #app-container {
-    position: relative;
+  position: relative;
 }
 
 .heading-container {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 
-    .introduction {
-        padding-top: 15vh;
-        padding-bottom: 1em;
-    }
+  .introduction {
+    padding-top: 15vh;
+    padding-bottom: 1em;
+  }
 }
 
 .big-hero {
-    height: $hero-height;
-    width: 100%;
-    position: absolute;
-    overflow: hidden;
-    background: $trans-green;
-    background: -webkit-linear-gradient($seagreen, $trans-green); 
-    background: -o-linear-gradient($seagreen, $trans-green); 
-    background: -moz-linear-gradient($seagreen, $trans-green);
-    background: linear-gradient($sand, $trans-green);
+  height: $hero-height;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  background: $trans-green;
+  background: -webkit-linear-gradient($seagreen, $trans-green);
+  background: -o-linear-gradient($seagreen, $trans-green);
+  background: -moz-linear-gradient($seagreen, $trans-green);
+  background: linear-gradient($sand, $trans-green);
 }
 
 .hero-text-cont {
-    width: 100%;
-    text-align: center;
-    height: $hero-height;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    z-index: 900;
+  width: 100%;
+  text-align: center;
+  height: $hero-height;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  z-index: 900;
 
-    .hero-text {
-        margin-top: 15vh;
-    }
+  .hero-text {
+    margin-top: 15vh;
+  }
 
-    .hello-world {
-        font-family: $code-font;
-        font-size: 2rem;
-    }
+  .hello-world {
+    font-family: $code-font;
+    font-size: 2rem;
+  }
 
-
-    i {
-        font-size: 3em;
-    }
+  i {
+    font-size: 3em;
+  }
 }
 
 .hero-img {
-    i {
-        margin-top: 3em;
-    }
+  i {
+    margin-top: 3em;
+  }
 }
 
 .introduction {
+  font-family: $h-font;
+  font-size: 3.4rem;
+
+  .subtitle {
+    font-size: 1.4rem;
     font-family: $h-font;
-    font-size: 3.4rem;
+    text-align: center;
 
-    .subtitle {
-        font-size: 1.4rem;
-        font-family: $h-font;
-        text-align: center;
-
-        i {
-            margin-left: 0.5em;
-            font-size: 1.6rem;
-        }
+    i {
+      margin-left: 0.5em;
+      font-size: 1.6rem;
     }
+  }
 }
 
 .profile-img {
-    width: 10em;
-    margin-top: 3em;
+  width: 10em;
+  margin-top: 3em;
 }
 
 .nav-container {
-    position: absolute;
-    width: 100vw;
+  position: absolute;
+  width: 100vw;
 }
 
 .nav {
-    background-color: $transparent;
-    justify-content: space-between;
-    font-family: $nav-font;
-    font-weight: 800;
+  background-color: $transparent;
+  justify-content: space-between;
+  font-family: $nav-font;
+  font-weight: 800;
 
-    .nav-left, .nav-right {
-        justify-content: space-around;
+  .nav-left,
+  .nav-right {
+    justify-content: space-around;
 
-        .nav-item {
-            color: #555;
-            text-transform: uppercase;
-            transition: color 0.6s;
-
-        }
-
-        .nav-item:hover {
-            color: $secgreen;
-        }
-
-        .nav-current {
-            color: $secgreen;
-            transition: color 0.6s;
-            
-        }
+    .nav-item {
+      color: #555;
+      text-transform: uppercase;
+      transition: color 0.6s;
     }
+
+    .nav-item:hover {
+      color: $secgreen;
+    }
+
+    .nav-current {
+      color: $secgreen;
+      transition: color 0.6s;
+    }
+  }
 }
 
 @media (max-width: 788px) {
-    .nav-left, .nav-right {
-        height: 70px;
-        flex-direction: column;
-        padding-top:10px;
+  .nav-left,
+  .nav-right {
+    height: 70px;
+    flex-direction: column;
+    padding-top: 10px;
 
-        .nav-item {
-            margin:auto;
-        }
+    .nav-item {
+      margin: auto;
     }
+  }
 }
 
 .logo-container {
-    width: 35px;
-    display: flex;
-    align-content: center;
-
+  width: 35px;
+  display: flex;
+  align-content: center;
 }
 
 .flag {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
 .logo {
-    border-radius: 3px;
+  border-radius: 3px;
 }
 
 .panels-container {
-    margin: auto;
-    width: $hero-height;
-    height: $hero-height;
+  margin: auto;
+  width: $hero-height;
+  height: $hero-height;
 }
 
 .panel-comp {
-    display: inline-block;
+  display: inline-block;
 }
 
 .panels {
-    height: $hero-height;
-    background-color: $hero-background-color;
-    background-image: $hero-background-img;
-    z-index: 1;
-    background-position: center;
-    background-size: cover;
-    
-    .desktop-row {
-        height: $hero-height / 12;
+  height: $hero-height;
+  background-color: $hero-background-color;
+  background-image: $hero-background-img;
+  z-index: 1;
+  background-position: center;
+  background-size: cover;
 
-        .panel-comp {
-            width: (100/24) * 1%;
-            transition: background-color $panel-flip-time;
-        }
-    }
-
-    .mobile-row {
-        height: $hero-height / 24;
-
-        .panel-comp {
-            width: (100/12) * 1%;
-            transition: background-color $panel-flip-time-mobile;
-        }
-    }
+  .desktop-row {
+    height: $hero-height / 12;
 
     .panel-comp {
-        height: 100%;
-        margin-right: 0px;
-        margin-left: 0px;
-        z-index: 1;
+      width: (100/24) * 1%;
+      transition: background-color $panel-flip-time;
     }
+  }
 
-    .panel-unflipped {
-        background-color: $panel;
+  .mobile-row {
+    height: $hero-height / 24;
+
+    .panel-comp {
+      width: (100/12) * 1%;
+      transition: background-color $panel-flip-time-mobile;
     }
+  }
 
-    .panel-flipping {
-        background-color: $transparent;
-    }
+  .panel-comp {
+    height: 100%;
+    margin-right: 0px;
+    margin-left: 0px;
+    z-index: 1;
+  }
 
+  .panel-unflipped {
+    background-color: $panel;
+  }
+
+  .panel-flipping {
+    background-color: $transparent;
+  }
 }
-
 
 #content {
-    background-color: $hero-background-color;
-
+  background-color: $hero-background-color;
 }
 
-.home-section, .personal-section {
-    padding: 4rem 20%;
-    display: flex;
-    flex-wrap: nowrap;
+.home-section,
+.personal-section {
+  padding: 4rem 20%;
+  display: flex;
+  flex-wrap: nowrap;
 
-    h2 {
-        font-size: 2rem;
-        font-family: $h-font;
-    }
+  h2 {
+    font-size: 2rem;
+    font-family: $h-font;
+  }
 
+  .home-icon {
+    font-size: 5rem;
+    padding: 1rem;
+  }
 
-    .home-icon {
-        font-size: 5rem;
-        padding: 1rem;
-    }
+  .home-text {
+  }
 
-    .home-text {
-    }
-
-    p {
-        font-family: $p-font;
-    }
+  p {
+    font-family: $p-font;
+  }
 }
 
 @media (max-width: 788px) {
-    .home-section {
-        flex-wrap: wrap;
-        text-align: center;
-    }
-    .home-icon {
-        margin: auto;
-    }
+  .home-section {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .home-icon {
+    margin: auto;
+  }
 }
 
 .project-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .project-cell {
-    margin: 0 2%;
-    margin-bottom: 2em;
-    width: 26%;
-    min-width: 15rem;
-    background-color: $sand2;
-    padding: 1.2em;
-    border-radius: 4px;
-    border-top: 1em solid $seagreen;
-    text-align: center;
+  margin: 0 2%;
+  margin-bottom: 2em;
+  width: 26%;
+  min-width: 15rem;
+  background-color: $sand2;
+  padding: 1.2em;
+  border-radius: 4px;
+  border-top: 1em solid $seagreen;
+  text-align: center;
 }
 
 .project-image {
-    width: 25%;
-    min-width: 70px;
-    border-radius: 20%;
-    margin: auto;
+  width: 25%;
+  min-width: 70px;
+  border-radius: 20%;
+  margin: auto;
 }
 
 .project-name {
-    font-size: 1.2em;
-    
-    i {
-        font-size: 1.4em;
-        margin-right: 0.5em;
-    }
+  font-size: 1.2em;
+
+  i {
+    font-size: 1.4em;
+    margin-right: 0.5em;
+  }
 }
 
 .project-desc {
-    color: #666;
+  color: #666;
 }
 
 /* ---- Personal ---- */
 
 .personal-section {
-    padding-top: 0;
+  padding-top: 0;
 }
 
 .quotes-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .quote-wrapper {
-    padding-left: 1rem;
-    padding-right: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .quote {
-    font-family: $quote !important;
-    font-size: 1.2rem !important;
+  font-family: $quote !important;
+  font-size: 1.2rem !important;
 }
 
 .quote-person {
-    margin-left: 1rem;
+  margin-left: 1rem;
 }
 
 .hierarchy-splash {
-    border-radius: 3rem;
+  border-radius: 3rem;
 }
 
 .magic-row {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .magic-cell {
-    margin-top: 2em;
-    width: $card-width;
-    text-align: center;
-    font-family: $h-font;
-    font-weight: bold;
+  margin-top: 2em;
+  width: $card-width;
+  text-align: center;
+  font-family: $h-font;
+  font-weight: bold;
 }
 
 .magic-partners {
-    width: $card-width;
-    position: relative;
-    padding-top: $card-height + 8px; // Extra padding to align deck name
-    img {
-        width: 180px; // 20% of $card-width
-        &:first-child {
-            position: absolute;
-            top: 28px; // offset to align cards
-            left: 0;
-            z-index: 1;
-        }
-        &:last-child {
-            position: absolute;
-            top: 0;
-            right: 0;
-            z-index: 0;
-
-            &:hover {
-                z-index: 2;
-            }
-        }
+  width: $card-width;
+  position: relative;
+  padding-top: $card-height + 8px; // Extra padding to align deck name
+  img {
+    width: 180px; // 20% of $card-width
+    &:first-child {
+      position: absolute;
+      top: 28px; // offset to align cards
+      left: 0;
+      z-index: 1;
     }
+    &:last-child {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 0;
+
+      &:hover {
+        z-index: 2;
+      }
+    }
+  }
 }

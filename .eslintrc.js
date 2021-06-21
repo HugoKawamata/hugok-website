@@ -50,7 +50,7 @@ module.exports = {
         objects: "always-multiline",
         imports: "always-multiline",
         exports: "always-multiline",
-        functions: "never",
+        functions: "always-multiline",
       },
     ],
     /* State isn't needed in constructor */

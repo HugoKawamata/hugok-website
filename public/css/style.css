@@ -11,7 +11,7 @@ a {
 }
 
 a:hover {
-  color: #0FB667;
+  color: #0fb667;
 }
 
 #app-container {
@@ -33,9 +33,9 @@ a:hover {
   position: absolute;
   overflow: hidden;
   background: rgba(20, 255, 144, 0.5);
-  background: -webkit-linear-gradient(#66FFB2, rgba(20, 255, 144, 0.5));
-  background: -o-linear-gradient(#66FFB2, rgba(20, 255, 144, 0.5));
-  background: -moz-linear-gradient(#66FFB2, rgba(20, 255, 144, 0.5));
+  background: -webkit-linear-gradient(#66ffb2, rgba(20, 255, 144, 0.5));
+  background: -o-linear-gradient(#66ffb2, rgba(20, 255, 144, 0.5));
+  background: -moz-linear-gradient(#66ffb2, rgba(20, 255, 144, 0.5));
   background: linear-gradient(#f9f9de, rgba(20, 255, 144, 0.5));
 }
 
@@ -93,29 +93,35 @@ a:hover {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
 }
-.nav .nav-left, .nav .nav-right {
+.nav .nav-left,
+.nav .nav-right {
   justify-content: space-around;
 }
-.nav .nav-left .nav-item, .nav .nav-right .nav-item {
+.nav .nav-left .nav-item,
+.nav .nav-right .nav-item {
   color: #555;
   text-transform: uppercase;
   transition: color 0.6s;
 }
-.nav .nav-left .nav-item:hover, .nav .nav-right .nav-item:hover {
-  color: #0FB667;
+.nav .nav-left .nav-item:hover,
+.nav .nav-right .nav-item:hover {
+  color: #0fb667;
 }
-.nav .nav-left .nav-current, .nav .nav-right .nav-current {
-  color: #0FB667;
+.nav .nav-left .nav-current,
+.nav .nav-right .nav-current {
+  color: #0fb667;
   transition: color 0.6s;
 }
 
 @media (max-width: 788px) {
-  .nav-left, .nav-right {
+  .nav-left,
+  .nav-right {
     height: 70px;
     flex-direction: column;
     padding-top: 10px;
   }
-  .nav-left .nav-item, .nav-right .nav-item {
+  .nav-left .nav-item,
+  .nav-right .nav-item {
     margin: auto;
   }
 }
@@ -172,7 +178,7 @@ a:hover {
   z-index: 1;
 }
 .panels .panel-unflipped {
-  background-color: #66FFB2;
+  background-color: #66ffb2;
 }
 .panels .panel-flipping {
   background-color: rgba(0, 0, 0, 0);
@@ -182,20 +188,24 @@ a:hover {
   background-color: #f9f9de;
 }
 
-.home-section, .personal-section {
+.home-section,
+.personal-section {
   padding: 4rem 20%;
   display: flex;
   flex-wrap: nowrap;
 }
-.home-section h2, .personal-section h2 {
+.home-section h2,
+.personal-section h2 {
   font-size: 2rem;
   font-family: "Raleway", sans-serif;
 }
-.home-section .home-icon, .personal-section .home-icon {
+.home-section .home-icon,
+.personal-section .home-icon {
   font-size: 5rem;
   padding: 1rem;
 }
-.home-section p, .personal-section p {
+.home-section p,
+.personal-section p {
   font-family: "Open Sans", sans-serif;
 }
 
@@ -223,7 +233,7 @@ a:hover {
   background-color: #e0e0be;
   padding: 1.2em;
   border-radius: 4px;
-  border-top: 1em solid #66FFB2;
+  border-top: 1em solid #66ffb2;
   text-align: center;
 }
 
