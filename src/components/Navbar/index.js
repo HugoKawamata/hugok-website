@@ -2,13 +2,19 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { withRouter, Link } from "react-router-dom";
+import type { Location } from "react-router";
+
 import { changeLanguage } from "../../store/config";
 import i18n from "./i18n";
 
-const NavbarWR = withRouter((props) => <Navbar {...props} />);
+type Props = {|
+  location: Location,
+|};
+
+const NavbarWR = withRouter((props: Props) => <Navbar {...props} />);
 export default NavbarWR;
 
-export function Navbar(props) {
+export function Navbar(props: Props) {
   const lang = useSelector((state) => state.config.language);
   const dispatch = useDispatch();
 

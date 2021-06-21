@@ -1,11 +1,24 @@
 /* @flow */
 import React from "react";
 
-export default class Panel extends React.Component {
-  constructor(props) {
+type Props = {|
+  className: string,
+  col: number,
+  row: number,
+|};
+
+type State = {|
+  className: string,
+  column: number,
+  delay: number,
+  mounted: boolean,
+  row: number,
+|};
+
+export default class Panel extends React.Component<Props, State> {
+  constructor(props: Props) {
     super(props);
     this.flipSelf = this.flipSelf.bind(this);
-    this.setState = this.setState.bind(this);
 
     this.state = {
       column: props.col, // Out of 24 (or 12 if mobile)

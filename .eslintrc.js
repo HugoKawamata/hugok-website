@@ -34,7 +34,7 @@ module.exports = {
     "react-hooks",
     "react-native",
   ],
-  ignorePatterns: ["**/__generated__/**"],
+  ignorePatterns: ["src/registerServiceWorker.js"],
   rules: {
     "global-require": 0,
     /* I like naming components/styles and then exporting them as default */

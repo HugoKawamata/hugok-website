@@ -6,7 +6,9 @@ import Hero from "./Hero";
 import Panels from "./Panels";
 import i18n from "./i18n";
 
-export function Home(props) {
+type Props = {||};
+
+export function Home(props: Props) {
   const lang = useSelector((state) => state.config.language);
 
   return (

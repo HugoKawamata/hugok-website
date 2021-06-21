@@ -14,6 +14,7 @@ ReactDOM.render(
       <App />
     </Provider>
   </BrowserRouter>,
+  // $FlowFixMe
   document.getElementById("root"),
 );
 registerServiceWorker();

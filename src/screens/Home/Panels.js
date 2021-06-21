@@ -3,8 +3,15 @@ import React from "react";
 
 import Panel from "./Panel";
 
-export default class Panels extends React.Component {
-  constructor(props) {
+type Props = {||};
+type State = {|
+  flipped: number,
+  height: number,
+  width: number,
+|};
+
+export default class Panels extends React.Component<Props, State> {
+  constructor(props: Props) {
     super(props);
     this.state = { width: 0, height: 0, flipped: 0 };
     this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
