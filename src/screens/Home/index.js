@@ -1,12 +1,15 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
+/* @flow */
+import React from "react";
+import { useSelector } from "react-redux";
 
-import { home as i18n } from './i18n'
-import Hero from '../Hero';
-import Panels from '../Panels';
+import Hero from "./Hero";
+import Panels from "./Panels";
+import i18n from "./i18n";
 
-export function Home(props) {
-  const lang = useSelector((state) => state.config.language)
+type Props = {||};
+
+export function Home(props: Props) {
+  const lang = useSelector((state) => state.config.language);
 
   return (
     <div className="main-body">
@@ -15,7 +18,9 @@ export function Home(props) {
       <div id="content">
         <section className="home-section">
           <div className="home-icon">
-            <span role="img" aria-label="waving-hugo">🙋🏽‍♂️</span>
+            <span role="img" aria-label="waving-hugo">
+              🙋🏽‍♂️
+            </span>
           </div>
           <div className="home-text">
             <h2>{i18n.meHeading[lang]}</h2>
@@ -24,7 +29,9 @@ export function Home(props) {
         </section>
         <section className="home-section">
           <div className="home-icon">
-            <span role="img" aria-label="working-hugo">👨🏽‍💻</span>
+            <span role="img" aria-label="working-hugo">
+              👨🏽‍💻
+            </span>
           </div>
           <div className="home-text">
             <h2>{i18n.workHeading[lang]}</h2>
@@ -33,7 +40,9 @@ export function Home(props) {
         </section>
         <section className="home-section">
           <div className="home-icon">
-            <span role="img" aria-label="dice">🎲</span>
+            <span role="img" aria-label="dice">
+              🎲
+            </span>
           </div>
           <div className="home-text">
             <h2>{i18n.gamesHeading[lang]}</h2>
@@ -42,7 +51,9 @@ export function Home(props) {
         </section>
         <section className="home-section">
           <div className="home-icon">
-            <span role="img" aria-label="torii">⛩</span>
+            <span role="img" aria-label="torii">
+              ⛩
+            </span>
           </div>
           <div className="home-text">
             <h2>{i18n.japaneseHeading[lang]}</h2>
@@ -54,4 +65,4 @@ export function Home(props) {
   );
 }
 
-export default Home
+export default Home;
