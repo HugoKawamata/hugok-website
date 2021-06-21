@@ -25,8 +25,8 @@ export const personal = {
       I find the social aspect really rewarding, and many of my closest friends today I met
       through playing Magic. I mainly play EDH, but I've also enjoyed standard and drafting.
       My EDH decks are currently:`,
-    ja: `子供の頃からずっと全種類のカードゲームが好きでまだマジック・ザ・をやるのが好きです。マジックのせいで
-      知り合った友達が多くて親しいから社会の側面が大事だと思います。主要に統率者というフォーマットをやるが、
+    ja: `子供の頃からずっと全種類のカードゲームが好きでまだマジック・ザ・ギャザリングをやるのが好きです。マジックのせいで
+      知り合った友達が多くて親しいから社会の側面が大事だと思います。主に統率者というフォーマットをやるが、
       さらにスタンダードもドラフトもたまにやります。`,
   },
 };
