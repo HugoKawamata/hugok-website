@@ -4,7 +4,14 @@ import { useSelector } from "react-redux";
 
 import i18n from "./i18n";
 
-function Project(props) {
+type ProjectProps = {|
+  desc: string,
+  github: string,
+  imgName: string,
+  name: string,
+|};
+
+function Project(props: ProjectProps) {
   return (
     <div className="project-cell">
       <a href={props.github}>
@@ -22,7 +29,9 @@ function Project(props) {
   );
 }
 
-export function Projects() {
+type Props = {||};
+
+export function Projects(props: Props) {
   const lang = useSelector((state) => state.config.language);
 
   return (

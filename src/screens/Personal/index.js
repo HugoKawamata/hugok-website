@@ -1,9 +1,16 @@
 /* @flow */
 import React from "react";
 import { useSelector } from "react-redux";
+import { SingleMagicCell, PartnerMagicCell } from "./MagicCell";
 import i18n from "./i18n";
 
-function Quote(props) {
+type QuoteProps = {|
+  link: string,
+  person: string,
+  quote: string,
+|};
+
+function Quote(props: QuoteProps) {
   return (
     <a href={props.link}>
       <div className="quote-wrapper">
@@ -14,34 +21,9 @@ function Quote(props) {
   );
 }
 
-function MagicCell(props) {
-  return (
-    <div className="magic-cell">
-      <img src={`images/magic/${props.imgName}.jpg`} alt={props.imgName} />
-      {props.deckName}
-    </div>
-  );
-}
+type Props = {||};
 
-function PartnerMagicCell(props) {
-  return (
-    <div className="magic-cell">
-      <div className="magic-partners">
-        <img
-          src={`images/magic/${props.frontImgName}.jpg`}
-          alt={props.frontImgName}
-        />
-        <img
-          src={`images/magic/${props.backImgName}.jpg`}
-          alt={props.backImgName}
-        />
-      </div>
-      {props.deckName}
-    </div>
-  );
-}
-
-export function Personal(props) {
+export function Personal(props: Props) {
   const lang = useSelector((state) => state.config.language);
   return (
     <div className="main-body">
@@ -89,14 +71,17 @@ export function Personal(props) {
           <h2>{i18n.magicTitle[lang]}</h2>
           <p>{i18n.magicBody[lang]}</p>
           <div className="magic-row">
-            <MagicCell imgName="sidisi" deckName="Graveyard Combo" />
-            <MagicCell imgName="horde" deckName="Elemental Tribal" />
-            <MagicCell imgName="omnath" deckName="Big Ramp" />
-            <MagicCell imgName="gitrog" deckName="Basic Frog's Eggs" />
-            <MagicCell imgName="sygg" deckName="Rogues and Ninjas" />
-            <MagicCell imgName="vorel" deckName="2^n Tribal" />
-            <MagicCell imgName="roon" deckName="Clone Hug" />
-            <MagicCell imgName="obnix" deckName="Big Ramp 2: Demon Boogaloo" />
+            <SingleMagicCell imgName="sidisi" deckName="Graveyard Combo" />
+            <SingleMagicCell imgName="horde" deckName="Elemental Tribal" />
+            <SingleMagicCell imgName="omnath" deckName="Big Ramp" />
+            <SingleMagicCell imgName="gitrog" deckName="Basic Frog's Eggs" />
+            <SingleMagicCell imgName="sygg" deckName="Rogues and Ninjas" />
+            <SingleMagicCell imgName="vorel" deckName="2^n Tribal" />
+            <SingleMagicCell imgName="roon" deckName="Clone Hug" />
+            <SingleMagicCell
+              imgName="obnix"
+              deckName="Big Ramp 2: Demon Boogaloo"
+            />
             <PartnerMagicCell
               frontImgName="sidar"
               backImgName="bruse"
