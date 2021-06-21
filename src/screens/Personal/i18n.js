@@ -31,4 +31,4 @@ export const personal = {
   },
 };
 
-export default personal
+export default personal;

@@ -38,6 +38,7 @@ module.exports = {
   rules: {
     "global-require": 0,
     /* I like naming components/styles and then exporting them as default */
+    "import/no-named-as-default-member": 0,
     "import/no-named-as-default": 0,
     /* We use flow, not typescript */
     "react/jsx-filename-extension": 0,
