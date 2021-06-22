@@ -18,11 +18,11 @@ export const projects = {
   },
   isseiTitle: {
     en: "Issei: Holistic Japanese Learning",
-    ja: "一斉: ホリスティックな日本語習得",
+    ja: "Issei: ホリスティックな日本語習得",
   },
   isseiDesc: {
     en: "An app that teaches Japanese holistically, with an emphasis on context",
-    ja: "仮名と単語と文法を一斉に、コンテキストを大事にして日本語を教えるReactアプリ。",
+    ja: "仮名と単語と文法をIsseiに、コンテキストを大事にして日本語を教えるReactアプリ。",
   },
   inLieuTitle: {
     en: "InLieu",

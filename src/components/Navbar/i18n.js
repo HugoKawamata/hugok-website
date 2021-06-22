@@ -14,7 +14,7 @@ export const i18n = {
   },
   navIssei: {
     en: "Issei",
-    ja: "一斉",
+    ja: "Issei",
   },
 };
 
